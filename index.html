@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white px-3 py-5 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <h1 class="text-2xl text-heading font-semibold">Append <span class="text-primary">.</span></h1>
+
+            <!-- Hamburger Button -->
+            <button id="navbar-toggle" class="block lg:hidden w-[38px] text-default text-2xl focus:outline-none">
+                ☰
+            </button>
+
+            <!-- Desktop Navbar -->
+            <ul class="hidden lg:flex items-center justify-center font-normal text-default font-Lato">
+                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px]">Home</a></li>
+                <li><a href="/deatails.html"
+                        class="hover:text-primary py-[18px] px-[15px] text-base">About</a></li>
+                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Services</a></li>
+                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Portfolio</a></li>
+                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Team</a></li>
+                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Blog</a></li>
+
+                <!-- Dropdown -->
+                <li class="relative group">
+                    <a href="#" class="hover:text-primary text-link  py-[18px] px-[15px] text-base">Dropdown
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul
+                        class="hidden absolute left-3  w-48 py-2 mt-2 bg-white shadow-md group-hover:flex flex-col hover:flex">
+                        <li><a href="#" class="hover:text-primary text-link block px-5 py-[10px] text-sm">Dropdown 1</a></li>
+
+                        <!-- Deep Dropdown -->
+                        <li class="relative">
+                            <a href="#" class="peer hover:text-primary block py-[10px]  px-5 text-sm">Deep Dropdown
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul
+                                class="absolute hidden bg-white -left-full top-0 w-48 py-2 mt-2 z-10 shadow-md peer-hover:block flex-col">
+                                <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Deep Link 1</a>
+                                </li>
+                                <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Deep Link 2</a>
+                                </li>
+                                <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Deep Link 3</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Dropdown 2</a></li>
+                        <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Dropdown 3</a></li>
+                        <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Dropdown 4</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-primary text-link py-4 px-6 text-base">Contact</a></li>
+            </ul>
+
+
+            <!-- Mobile Modal Navbar -->
+            <div id="mobile-nav" class="fixed inset-0 bg-[#212529cc] hidden flex items-center justify-center z-50">
+                <div class="bg-white w-[90%] max-w-[400px] overflow-y-auto p-5 rounded-lg">
+                    <button id="close-navbar"
+                        class="absolute right-6 top-5 text-primary text-xl mb-5 focus:outline-none">
+                        ✕
+                    </button>
+                    <ul class="flex flex-col space-y-4 font-normal text-default font-Lato max-h-[70vh] ">
+                        <li><a class="text-base text-primary" href="">Home</a></li>
+                        <li><a class="text-base" href="/deatails.html">About</a></li>
+                        <li><a class="text-base" href="">Services</a></li>
+                        <li><a class="text-base" href="">Portfolio</a></li>
+                        <li><a class="text-base" href="">Team</a></li>
+                        <li><a class="text-base" href="">Blog</a></li>
+                        <li class="relative">
+                            <a href="#" class="text-base flex items-center justify-between cursor-pointer"
+                                onclick="toggleDropdown(event, 'dropdownMenu')">
+                                Dropdown
+                                <span
+                                    class="bg-[#EAF8EC] hover:bg-primary hover:text-white h-[30px] text-xs w-[30px] rounded-full flex items-center justify-center transition-transform duration-300">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <ul id="dropdownMenu" class="hidden border bg-[#21252908] rounded my-[10px] py-[10px] ">
+                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 1</a></li>
+                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 2</a></li>
+                                <!-- Deep Dropdown -->
+                                <li class="relative">
+                                    <a href="#"
+                                        class="block py-[10px] px-5 text-black flex items-center justify-between cursor-pointer"
+                                        onclick="toggleDropdown(event, 'deepDropdownMenu')">
+                                        Deep Dropdown
+                                        <span
+                                            class="bg-[#EAF8EC] hover:bg-primary hover:text-white h-[30px] text-xs w-[30px] rounded-full flex items-center justify-center">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <ul id="deepDropdownMenu"
+                                        class="hidden border mx-5 my-[10px] bg-[#21252908] rounded mt-2 py-2 left-full top-0 ">
+                                        <li><a href="#" class="block py-[10px] px-5 text-black">Deep Dropdown 1</a></li>
+                                        <li><a href="#" class="block py-[10px] px-5 text-black">Deep Dropdown 2</a></li>
+                                        <li><a href="#" class="block py-[10px] px-5 text-black">Deep Dropdown 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 3</a></li>
+                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="text-base" href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="bg-primary text-[14px] py-2 px-6 rounded-[4px] text-white">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section>
+        <div class="container mx-auto max-w-[1140px] py-20 flex flex-col mt-20 items-center ">
+            <div class="w-4/6 text-center">
+                <h1 class="text-[38px] text-heading font-bold mb-2">Blog Details</h1>
+                <p class="text-base text-default">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
+                    odio sint voluptas consequatur ut a
+                    odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
+                    dolorem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- details section -->
+    <section>
+        <!-- top section -->
+        <div class="bg-slate-300 py-5">
+            <div class="max-w-[1140px] containe mx-auto flex ">
+                <h5 class="text-base font-semibold pr-[10px] text-primary">Home</h5>
+                <h5 class="text-base text-default font-semibold before:pr-[10px] before:content-['/']">Blog Details</h5>
+            </div>
+        </div>
+        <!-- details section -->
+        <div class="container max-w-[1140px] pt-[60px] pb-8 flex mx-auto">
+            <div class="w-4/6 mx-3 shadow-lg">
+                <!-- img  -->
+                <div>
+                    <img src="img/blog.jpg" alt="">
+                </div>
+                <!-- post container -->
+                <div class="p-[30px]">
+                    <h2 class="text-[28px] font-bold my-[30px]">
+                        Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
+                    </h2>
+                    <!-- icons -->
+
+                    <!-- text section -->
+                    <div>
+                        <p class="text-base mb-4">
+                            Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium.
+                            Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est
+                            ea
+                            dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt.
+                            Voluptate porro consequatur assumenda perferendis dolore.
+                        </p>
+                        <p class="text-base mb-4">
+                            Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus
+                            harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
+                    </div>
+                    <!-- block section -->
+
+                    <!-- text section 2 -->
+                    <div>
+                        <p class="text-base mb-4">
+                            Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
+                            <h4 class="mb-2 mt-[30px] text-[22px] font-bold">Et quae iure vel ut odit alias.</h4>
+                            <p class="text-base mb-4">
+                            Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                        </p>
+                        <img src="img/blog-inside-post.jpg" alt="">
+                        <h4 class="mb-2 mt-[30px] text-[22px] font-bold">Ut repellat blanditiis est dolore sunt dolorum quae.</h4>
+                        <p class="text-base mb-4">
+                            Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                        </p>
+                        <p class="text-base mb-4">
+                            Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                        </p>
+                    </div>
+                    <!-- end post -->
+                     <div class="border-t pt-[10px]">
+                        <div class="flex gap-5 items-center">
+                            <span ><i class="fa-regular fa-folder"></i> Business</span>
+                            <span><i class="fa-solid fa-tag"></i> Creative, Tipes, Marketing</span>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="w-1/3  mx-3 bg-white shadow-lg">
+                <div class="p-[30px]">
+                    <!-- form -->
+                    <div class="pb-10">
+                        <h4 class="mb-5 text-xl font-bold">Search</h4>
+                        <div class="flex">
+                            <input class="border py-2 px-3 w-full" type="text">
+                            <button class="bg-primary h-10 w-10 text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <!-- Categories -->
+                    <div class="pb-10">
+                        <h4 class="mb-5 text-xl font-bold">Categories</h4>
+                        <ul class="flex flex-col gap-[10px] text-sm">
+                            <li>General (25)</li>
+                            <li>Lifestyle (12)</li>
+                            <li>Travel (5)</li>
+                            <li>Design (22)</li>
+                            <li>Creative (8)</li>
+                            <li>Educaion (14)</li>
+                        </ul>
+                    </div>
+                    <!-- posts -->
+                    <div class="pb-10">
+                        <h4 class="mb-5 text-xl font-bold">Recent Posts</h4>
+                        <div class="flex flex-col gap-[15px]">
+                            <!-- post 1 -->
+                            <div class="flex">
+                                <div class="w-20 h-20 mr-[15px]">
+                                    <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                        blanditiis at in nihil autem</h4>
+                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                </div>
+                            </div>
+                            <!-- post 2 -->
+                            <div class="flex">
+                                <div class="w-20 h-20 mr-[15px]">
+                                    <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                        blanditiis at in nihil autem</h4>
+                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                </div>
+                            </div>
+                            <!-- post 3 -->
+                            <div class="flex">
+                                <div class="w-20 h-20 mr-[15px]">
+                                    <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                        blanditiis at in nihil autem</h4>
+                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                </div>
+                            </div>
+                            <!-- post 4 -->
+                            <div class="flex">
+                                <div class="w-20 h-20 mr-[15px]">
+                                    <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                        blanditiis at in nihil autem</h4>
+                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                </div>
+                            </div>
+                            <!-- post 5 -->
+                            <div class="flex">
+                                <div class="w-20 h-20 mr-[15px]">
+                                    <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
+                                </div>
+                                <div>
+                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                        blanditiis at in nihil autem</h4>
+                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tages -->
+                    <div>
+                        <h4 class="mb-5 text-xl font-bold">Tages</h4>
+                        <div class="">
+                            <ul class="flex flex-wrap">
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">App</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">IT</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Business</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Mac</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Design</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Office</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Creative</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Studio</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Smart</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Tips</span>
+                                <span
+                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    href="">Marketing</span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/2dfedb0ed0.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
