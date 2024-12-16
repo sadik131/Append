@@ -27,6 +27,7 @@ module.exports = {
         customMix7: 'color-mix(in srgb, #212529, transparent 70%)',
         customMix8: 'color-mix(in srgb, #212529, transparent 80%)',
         customMix95: 'color-mix(in srgb, #212529, transparent 95%)',
+        customMix9: 'color-mix(in srgb, #212529, transparent 90%)',
         background: '#ffffff',
         default: '#212529',
         heading: '#32353a',
