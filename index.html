@@ -1,40 +1,54 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="src/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="fixed top-0 left-0 w-full bg-white px-3 py-5 z-50">
         <div class="container mx-auto flex items-center justify-between">
             <!-- Logo -->
-            <h1 class="text-2xl text-heading font-semibold">Append <span class="text-primary">.</span></h1>
-
-            <!-- Hamburger Button -->
-            <button id="navbar-toggle" class="block lg:hidden w-[38px] text-default text-2xl focus:outline-none">
-                ☰
-            </button>
+            <h1 class="text-2xl font-montserrat text-heading font-semibold">Append <span class="text-primary">.</span>
+            </h1>
 
             <!-- Desktop Navbar -->
             <ul class="hidden lg:flex items-center justify-center font-normal text-default font-Lato">
-                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px]">Home</a></li>
-                <li><a href="/deatails.html"
-                        class="hover:text-primary py-[18px] px-[15px] text-base">About</a></li>
-                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Services</a></li>
-                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Portfolio</a></li>
-                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Team</a></li>
-                <li><a href="#" class="hover:text-primary text-link py-[18px] px-[15px] text-base">Blog</a></li>
+                <li class="py-[18px] px-[15px]"><a href="#" class="hover:text-primary font-poppins text-link">Home</a></li>
+                <li class="py-[18px] px-[15px]"><a href="/deatails.html"
+                        class="hover:text-primary font-poppins py-[18px] px-[15px] text-base">About</a></li>
+                <li class="py-[18px] px-[15px]"><a href="#"
+                        class="hover:text-primary font-poppins text-link  text-base">Services</a>
+                </li>
+                <li class="py-[18px] px-[15px]"><a href="#"
+                        class="hover:text-primary font-poppins text-link  text-base">Portfolio</a>
+                </li>
+                <li class="py-[18px] px-[15px]"><a href="#" class="hover:text-primary font-poppins text-link  text-base">Team</a>
+                </li>
+                <li class="py-[18px] px-[15px]"><a href="#" class="hover:text-primary font-poppins text-link  text-base">Blog</a>
+                </li>
 
                 <!-- Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-primary text-link  py-[18px] px-[15px] text-base">Dropdown
+                    <a href="#"
+                        class="hover:text-primary font-poppins text-link  py-[18px] px-[15px] text-base">Dropdown
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul
                         class="hidden absolute left-3  w-48 py-2 mt-2 bg-white shadow-md group-hover:flex flex-col hover:flex">
-                        <li><a href="#" class="hover:text-primary text-link block px-5 py-[10px] text-sm">Dropdown 1</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary font-poppins text-link block px-5 py-[10px] text-sm">Dropdown
+                                1</a></li>
 
                         <!-- Deep Dropdown -->
                         <li class="relative">
@@ -43,39 +57,51 @@
                             </a>
                             <ul
                                 class="absolute hidden bg-white -left-full top-0 w-48 py-2 mt-2 z-10 shadow-md peer-hover:block flex-col">
-                                <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Deep Link 1</a>
+                                <li><a href="#"
+                                        class="hover:text-primary font-poppins text-link block py-[10px] px-5 text-sm">Deep
+                                        Link 1</a>
                                 </li>
-                                <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Deep Link 2</a>
+                                <li><a href="#"
+                                        class="hover:text-primary font-poppins text-link block py-[10px] px-5 text-sm">Deep
+                                        Link 2</a>
                                 </li>
-                                <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Deep Link 3</a>
+                                <li><a href="#"
+                                        class="hover:text-primary font-poppins text-link block py-[10px] px-5 text-sm">Deep
+                                        Link 3</a>
                                 </li>
                             </ul>
                         </li>
 
-                        <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Dropdown 2</a></li>
-                        <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Dropdown 3</a></li>
-                        <li><a href="#" class="hover:text-primary text-link block py-[10px] px-5 text-sm">Dropdown 4</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary font-poppins text-link block py-[10px] px-5 text-sm">Dropdown
+                                2</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary font-poppins text-link block py-[10px] px-5 text-sm">Dropdown
+                                3</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary font-poppins text-link block py-[10px] px-5 text-sm">Dropdown
+                                4</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#" class="hover:text-primary text-link py-4 px-6 text-base">Contact</a></li>
+                <li><a href="#" class="hover:text-primary font-poppins text-link py-4 px-6 text-base">Contact</a></li>
             </ul>
 
 
             <!-- Mobile Modal Navbar -->
-            <div id="mobile-nav" class="fixed inset-0 bg-[#212529cc] hidden flex items-center justify-center z-50">
+            <div id="mobile-nav" class="fixed inset-0 bg-[#212529cc] hidden flex items-center lg:justify-center z-50">
                 <div class="bg-white w-[90%] max-w-[400px] overflow-y-auto p-5 rounded-lg">
                     <button id="close-navbar"
                         class="absolute right-6 top-5 text-primary text-xl mb-5 focus:outline-none">
                         ✕
                     </button>
                     <ul class="flex flex-col space-y-4 font-normal text-default font-Lato max-h-[70vh] ">
-                        <li><a class="text-base text-primary" href="">Home</a></li>
-                        <li><a class="text-base" href="/deatails.html">About</a></li>
-                        <li><a class="text-base" href="">Services</a></li>
-                        <li><a class="text-base" href="">Portfolio</a></li>
-                        <li><a class="text-base" href="">Team</a></li>
-                        <li><a class="text-base" href="">Blog</a></li>
+                        <li><a class="text-base  font-poppins text-primary" href="">Home</a></li>
+                        <li><a class="text-base font-poppins " href="/deatails.html">About</a></li>
+                        <li><a class="text-base font-poppins " href="">Services</a></li>
+                        <li><a class="text-base font-poppins " href="">Portfolio</a></li>
+                        <li><a class="text-base font-poppins " href="">Team</a></li>
+                        <li><a class="text-base font-poppins " href="">Blog</a></li>
                         <li class="relative">
                             <a href="#" class="text-base flex items-center justify-between cursor-pointer"
                                 onclick="toggleDropdown(event, 'dropdownMenu')">
@@ -88,12 +114,12 @@
 
                             <!-- Dropdown Menu -->
                             <ul id="dropdownMenu" class="hidden border bg-[#21252908] rounded my-[10px] py-[10px] ">
-                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 1</a></li>
-                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 2</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 1</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 2</a></li>
                                 <!-- Deep Dropdown -->
                                 <li class="relative">
                                     <a href="#"
-                                        class="block py-[10px] px-5 text-black flex items-center justify-between cursor-pointer"
+                                        class="block py-[10px] font-poppins px-5 text-black flex items-center justify-between cursor-pointer"
                                         onclick="toggleDropdown(event, 'deepDropdownMenu')">
                                         Deep Dropdown
                                         <span
@@ -104,29 +130,39 @@
 
                                     <ul id="deepDropdownMenu"
                                         class="hidden border mx-5 my-[10px] bg-[#21252908] rounded mt-2 py-2 left-full top-0 ">
-                                        <li><a href="#" class="block py-[10px] px-5 text-black">Deep Dropdown 1</a></li>
-                                        <li><a href="#" class="block py-[10px] px-5 text-black">Deep Dropdown 2</a></li>
-                                        <li><a href="#" class="block py-[10px] px-5 text-black">Deep Dropdown 3</a></li>
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Deep
+                                                Dropdown 1</a></li>
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Deep
+                                                Dropdown 2</a></li>
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Deep
+                                                Dropdown 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 3</a></li>
-                                <li><a href="#" class="block py-[10px] px-5 text-black">Dropdown 4</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 3</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 4</a></li>
                             </ul>
                         </li>
                         <li><a class="text-base" href="">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            <button class="bg-primary text-[14px] py-2 px-6 rounded-[4px] text-white">Get Started</button>
+            <div class="flex ">
+                <button class="bg-primary text-[14px] py-2 px-6 rounded-[4px] text-white">Get Started</button>
+                <!-- Hamburger Button -->
+                <button id="navbar-toggle" class="block lg:hidden w-[38px] text-default text-2xl focus:outline-none">
+                    ☰
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- hero section -->
     <section>
         <div class="container mx-auto max-w-[1140px] py-20 flex flex-col mt-20 items-center ">
-            <div class="w-4/6 text-center">
-                <h1 class="text-[38px] text-heading font-bold mb-2">Blog Details</h1>
-                <p class="text-base text-default">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
+            <div class="lg:w-4/6 px-3 text-center">
+                <h1 class="text-[38px] text-heading font-bold mb-2 font-montserrat">Blog Details</h1>
+                <p class="text-base text-default font-open">Odio et unde deleniti. Deserunt numquam exercitationem.
+                    Officiis quo
                     odio sint voluptas consequatur ut a
                     odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
                     dolorem.</p>
@@ -137,140 +173,377 @@
     <!-- details section -->
     <section>
         <!-- top section -->
-        <div class="bg-slate-300 py-5">
-            <div class="max-w-[1140px] containe mx-auto flex ">
+        <div class="bg-customMix95 py-5">
+            <div class="max-w-[1140px] px-8 containe mx-auto flex ">
                 <h5 class="text-base font-semibold pr-[10px] text-primary">Home</h5>
                 <h5 class="text-base text-default font-semibold before:pr-[10px] before:content-['/']">Blog Details</h5>
             </div>
         </div>
         <!-- details section -->
-        <div class="container max-w-[1140px] pt-[60px] pb-8 flex mx-auto">
-            <div class="w-4/6 mx-3 shadow-lg">
-                <!-- img  -->
-                <div>
-                    <img src="img/blog.jpg" alt="">
-                </div>
-                <!-- post container -->
-                <div class="p-[30px]">
-                    <h2 class="text-[28px] font-bold my-[30px]">
-                        Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
-                    </h2>
-                    <!-- icons -->
-
-                    <!-- text section -->
+        <div class="container max-w-[1140px] pb-[30px] pt-[60px] flex flex-col lg:flex-row mx-auto">
+            <div class="lg:w-4/6 mx-3">
+                <!-- details -->
+                <div class="shadow-box"><!-- img  -->
                     <div>
-                        <p class="text-base mb-4">
-                            Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium.
-                            Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est
-                            ea
-                            dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt.
-                            Voluptate porro consequatur assumenda perferendis dolore.
-                        </p>
-                        <p class="text-base mb-4">
-                            Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus
-                            harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
+                        <img src="img/blog.jpg" alt="">
                     </div>
-                    <!-- block section -->
-
-                    <!-- text section 2 -->
-                    <div>
-                        <p class="text-base mb-4">
-                            Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
-                            <h4 class="mb-2 mt-[30px] text-[22px] font-bold">Et quae iure vel ut odit alias.</h4>
-                            <p class="text-base mb-4">
-                            Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                        </p>
-                        <img src="img/blog-inside-post.jpg" alt="">
-                        <h4 class="mb-2 mt-[30px] text-[22px] font-bold">Ut repellat blanditiis est dolore sunt dolorum quae.</h4>
-                        <p class="text-base mb-4">
-                            Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
-                        </p>
-                        <p class="text-base mb-4">
-                            Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                        </p>
-                    </div>
-                    <!-- end post -->
-                     <div class="border-t pt-[10px]">
-                        <div class="flex gap-5 items-center">
-                            <span ><i class="fa-regular fa-folder"></i> Business</span>
-                            <span><i class="fa-solid fa-tag"></i> Creative, Tipes, Marketing</span>
+                    <!-- post container -->
+                    <div class="p-[30px]">
+                        <h2 class="font-montserrat text-heading text-[28px] font-bold my-[30px]">
+                            Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
+                        </h2>
+                        <!-- icons -->
+                        <div>
+                            <span class="text-sm text-customMix6">
+                                <i class="fa-regular text-base text-customMix4 mr-2 fa-user"></i>
+                                John Doe
+                            </span>
+                            <span class="ml-5 text-sm text-customMix6">
+                                <i class="fa-regular text-base text-customMix4 mr-2 fa-clock"></i>
+                                jan 1, 2022
+                            </span>
+                            <span class="ml-5 text-sm text-customMix6">
+                                <i class="fa-regular text-base text-customMix4 mr-2 fa-comment"></i>
+                                12 comments
+                            </span>
                         </div>
-                     </div>
+
+                        <!-- text section -->
+                        <div class="mt-5">
+                            <p class="font-open text-default text-base mb-4">
+                                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi
+                                praesentium.
+                                Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit
+                                est
+                                ea
+                                dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit
+                                sunt.
+                                Voluptate porro consequatur assumenda perferendis dolore.
+                            </p>
+                            <p class="font-open text-default text-base mb-4">
+                                Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in
+                                accusamus
+                                harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
+                        </div>
+                        <!-- block section -->
+                        <div
+                            class="bg-customMix95 my-5 p-[60px] text-center relative before:content-[''] before:block before:absolute before:border-l-[3px] before:my-10 before:border-primary before:top-[-20px] before:bottom-[-20px] before:left-0 before:right-0 before:z-[-1]">
+                            <p class="text-[22px] font-medium text-customMix95 italic">
+                                Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos
+                                aliquam doloribus minus autem quos.
+                            </p>
+                        </div>
+
+                        <!-- text section 2 -->
+                        <div>
+                            <p class="font-open text-default text-base mb-4">
+                                Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore
+                                provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta
+                                est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor
+                                porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit
+                                quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem
+                                itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel
+                                magnam quod et tempora deleniti error rerum nihil tempora.</p>
+                            <h4 class="font-montserrat text-heading mb-2 mt-[30px] text-[22px] font-bold">Et quae iure
+                                vel ut odit alias.</h4>
+                            <p class="font-open text-default text-base mb-4">
+                                Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum
+                                atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem
+                                laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum
+                                nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt
+                                nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta
+                                exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur
+                                id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero
+                                soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem
+                                voluptatem accusamus mollitia aut atque aut.
+                            </p>
+                            <img src="img/blog-inside-post.jpg" alt="">
+                            <h4 class="font-montserrat text-heading mb-2 mt-[30px] text-[22px] font-bold">Ut repellat
+                                blanditiis est dolore sunt dolorum quae.</h4>
+                            <p class="font-open text-default text-base mb-4">
+                                Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In
+                                assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro
+                                autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem
+                                facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut
+                                asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut
+                                aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                            </p>
+                            <p class="font-open text-default text-base mb-4">
+                                Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas
+                                incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                            </p>
+                        </div>
+                        <!-- end post -->
+                        <div class="border-t pt-[10px]">
+                            <div class="flex gap-5 items-center">
+                                <span class="text-customMix4"><i class="fa-regular text-customMix4 fa-folder"></i>
+                                    Business</span>
+                                <span class="text-customMix4"><i class="fa-solid text-customMix4 fa-tag"></i> Creative,
+                                    Tipes, Marketing</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- author comment -->
+                <div class="shadow-box pt-[10px] mt-8">
+                    <div class="p-[30px] flex items-center">
+                        <!-- author image -->
+                        <img class="w-[120px] h-[120px] lg:max-w-[120px] shrink-0 rounded-full mr-5"
+                            src="img/blog-author.jpg" alt="">
+                        <!-- comment -->
+                        <div>
+                            <h4 class="text-xl font-semibold font-montserrat text-customMix2">Jane Smith</h4>
+                            <!-- icon -->
+                            <div class="mb-[10px] flex gap-[5px]">
+                                <i class="fa-brands text-customMix6 fa-x-twitter"></i>
+                                <i class="fa-brands text-customMix6 fa-facebook"></i>
+                                <i class="fa-brands text-customMix6 fa-instagram"></i>
+                            </div>
+                            <p class="italic text-base font-open text-customMix3">Itaque quidem optio quia voluptatibus
+                                dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia
+                                numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- total comment -->
+                <div class="mt-10">
+                    <h1 class="text-2xl font-montserrat font-bold mb-2">8 Comment</h1>
+                    <!-- comment 1 -->
+                    <div class="flex mt-[30px]">
+                        <img class="w-[60px] h-[60px] mr-[14px]" src="img/comments-1.jpg" alt="">
+                        <div>
+                            <div class="flex">
+                                <h4
+                                    class="text-base cursor-pointer hover:text-primary font-bold mb-[2px] font-montserrat text-default">
+                                    Georgia Reader</h4>
+                                <span class="text-customMix4 hover:text-primary cursor-pointer pl-[10px] font-bold">
+                                    <i class="fa-solid fa-share"></i>
+                                    Reply
+                                </span>
+                            </div>
+                            <h5 class="text-sm text-customMix4 mb-[5px]">01 Jan,2022</h5>
+                            <p class="text-base mb-4 font-open text-default">Et rerum totam nisi. Molestiae vel quam
+                                dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
+                                Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.</p>
+                        </div>
+                    </div>
+                    <!-- comment 2 -->
+                    <div>
+                        <div>
+                            <div class="flex mt-[30px]">
+                                <img class="w-[60px] h-[60px] mr-[14px]" src="img/comments-3.jpg" alt="">
+                                <div>
+                                    <div class="flex">
+                                        <h4
+                                            class="text-base cursor-pointer hover:text-primary font-bold mb-[2px] font-montserrat text-default">
+                                            Aron Alvarado</h4>
+                                        <span
+                                            class="text-customMix4 hover:text-primary cursor-pointer pl-[10px] font-bold">
+                                            <i class="fa-solid fa-share"></i>
+                                            Reply
+                                        </span>
+                                    </div>
+                                    <h5 class="text-sm text-customMix4 mb-[5px]">01 Jan,2022</h5>
+                                    <p class="text-base mb-4 font-open text-default">Ipsam tempora sequi voluptatem quis
+                                        sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.</p>
+                                </div>
+                            </div>
+                            <!-- reply 1 -->
+                            <div class="flex pl-10 mt-[30px]">
+                                <img class="w-[60px] h-[60px] mr-[14px]" src="img/blog-author.jpg" alt="">
+                                <div>
+                                    <div class="flex">
+                                        <h4
+                                            class="text-base cursor-pointer hover:text-primary font-bold mb-[2px] font-montserrat text-default">
+                                            Lynda Small </h4>
+                                        <span
+                                            class="text-customMix4 hover:text-primary cursor-pointer pl-[10px] font-bold">
+                                            <i class="fa-solid fa-share"></i>
+                                            Reply
+                                        </span>
+                                    </div>
+                                    <h5 class="text-sm text-customMix4 mb-[5px]">01 Jan,2022</h5>
+                                    <p class="text-base mb-4 font-open text-default">Et dignissimos impedit nulla et quo
+                                        distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi
+                                        sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat
+                                        quisquam possimus. Perferendis id consectetur necessitatibus.</p>
+                                </div>
+                            </div>
+                            <!-- reply 2 -->
+                            <div class="flex pl-20 mt-[30px]">
+                                <img class="w-[60px] h-[60px] mr-[14px]" src="img/comments-4.jpg" alt="">
+                                <div>
+                                    <div class="flex">
+                                        <h4
+                                            class="text-base cursor-pointer hover:text-primary font-bold mb-[2px] font-montserrat text-default">
+                                            Sianna Ramsay </h4>
+                                        <span
+                                            class="text-customMix4 hover:text-primary cursor-pointer pl-[10px] font-bold">
+                                            <i class="fa-solid fa-share"></i>
+                                            Reply
+                                        </span>
+                                    </div>
+                                    <h5 class="text-sm text-customMix4 mb-[5px]">01 Jan,2022</h5>
+                                    <p class="text-base mb-4 font-open text-default">Et dignissimos impedit nulla et quo
+                                        distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi
+                                        sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat
+                                        quisquam possimus. Perferendis id consectetur necessitatibus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comment 3 -->
+                    <div class="flex mt-[30px]">
+                        <img class="w-[60px] h-[60px] mr-[14px]" src="img/comments-5.jpg" alt="">
+                        <div>
+                            <div class="flex">
+                                <h4
+                                    class="text-base cursor-pointer hover:text-primary font-bold mb-[2px] font-montserrat text-default">
+                                    Nolan Davidson</h4>
+                                <span class="text-customMix4 hover:text-primary cursor-pointer pl-[10px] font-bold">
+                                    <i class="fa-solid fa-share"></i>
+                                    Reply
+                                </span>
+                            </div>
+                            <h5 class="text-sm text-customMix4 mb-[5px]">01 Jan,2022</h5>
+                            <p class="text-base mb-4 font-open text-default">Distinctio nesciunt rerum reprehenderit
+                                sed. Iste omnis eius repellendus quia nihil ut accusantium tempore. Nesciunt expedita id
+                                dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at. Non aut
+                                et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur
+                                officia beatae ea aut eos soluta. Non qui dolorum voluptatibus et optio veniam. Quam
+                                officia sit nostrum dolorem.</p>
+                        </div>
+                    </div>
+                    <div class="flex mt-[30px]">
+                        <img class="w-[60px] h-[60px] mr-[14px]" src="img/comments-1.jpg" alt="">
+                        <div>
+                            <div class="flex">
+                                <h4
+                                    class="text-base cursor-pointer hover:text-primary font-bold mb-[2px] font-montserrat text-default">
+                                    Nolan Davidson</h4>
+                                <span class="text-customMix4 hover:text-primary cursor-pointer pl-[10px] font-bold">
+                                    <i class="fa-solid fa-share"></i>
+                                    Reply
+                                </span>
+                            </div>
+                            <h5 class="text-sm text-customMix4 mb-[5px]">01 Jan,2022</h5>
+                            <p class="text-base mb-4 font-open text-default">Dolorem atque aut. Omnis doloremque
+                                blanditiis quia eum porro quis ut velit tempore. Cumque sed quia ut maxime. Est ad aut
+                                cum. Ut exercitationem non in fugiat.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- form -->
+                <form class="shadow-box mt-[30px] mb-[60px] p-[30px]">
+                    <h3 class="text-[22px] mb-2 font-bold font-montserrat">Post Comment</h3>
+                    <p class="text-sm mb-[14px]">Your email address will not be published. Required fields are marked *
+                    </p>
+                    <label class="lg:flex mb-[25px] gap-3">
+                        <input placeholder="Your Name *"
+                            class="bg-surface mb-[25px] border border-customMix7 rounded-[4px] p-[10px] text-sm w-full"
+                            type="text">
+                        <input placeholder="Your Email *"
+                            class="bg-surface mb-[25px] border border-customMix7 rounded-[4px] p-[10px] text-sm w-full"
+                            type="text">
+                    </label>
+                    <label class="">
+                        <input placeholder="Your Website *"
+                            class="bg-surface border border-customMix7 mb-[25px] rounded-[4px] p-[10px] text-sm w-full"
+                            type="text">
+                    </label>
+                    <label class="">
+                        <textarea placeholder="Your Comment *"
+                            class="bg-surface border border-customMix7 mb-[25px] rounded-[4px] p-[10px] text-sm w-full h-[120px]"
+                            name="" id=""></textarea>
+                    </label>
+                    <button class="rounded-[4px] py-[10px] px-5 bg-primary text-white mx-auto block">Post
+                        Comment</button>
+                </form>
             </div>
-            <div class="w-1/3  mx-3 bg-white shadow-lg">
+            <div class="h-fit mt-[60px] lg:block lg:w-1/3  mx-3 bg-white shadow-box">
                 <div class="p-[30px]">
                     <!-- form -->
                     <div class="pb-10">
-                        <h4 class="mb-5 text-xl font-bold">Search</h4>
+                        <h4 class="mb-5 font-montserrat text-heading text-xl font-bold">Search</h4>
                         <div class="flex">
                             <input class="border py-2 px-3 w-full" type="text">
-                            <button class="bg-primary h-10 w-10 text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button class="bg-primary w-10 h-[46px] text-white"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
                     <!-- Categories -->
                     <div class="pb-10">
-                        <h4 class="mb-5 text-xl font-bold">Categories</h4>
-                        <ul class="flex flex-col gap-[10px] text-sm">
-                            <li>General (25)</li>
-                            <li>Lifestyle (12)</li>
-                            <li>Travel (5)</li>
-                            <li>Design (22)</li>
-                            <li>Creative (8)</li>
-                            <li>Educaion (14)</li>
+                        <h4 class="mb-5 text-xl font-montserrat text-heading font-bold">Categories</h4>
+                        <ul class="flex flex-col gap-[10px] text-customMix2 font-open text-base">
+                            <li>General <span class="text-customMix5">(25)</span></li>
+                            <li>Lifestyle <span class="text-customMix5">(12)</span></li>
+                            <li>Travel <span class="text-customMix5">(5)</span></li>
+                            <li>Design <span class="text-customMix5">(22)</span></li>
+                            <li>Creative <span class="text-customMix5">(8)</span></li>
+                            <li>Educaion <span class="text-customMix5">(14)</span></li>
                         </ul>
                     </div>
                     <!-- posts -->
                     <div class="pb-10">
-                        <h4 class="mb-5 text-xl font-bold">Recent Posts</h4>
+                        <h4 class="mb-5 text-xl text-heading font-montserrat font-bold">Recent Posts</h4>
                         <div class="flex flex-col gap-[15px]">
                             <!-- post 1 -->
                             <div class="flex">
-                                <div class="w-20 h-20 mr-[15px]">
+                                <div class="w-20 h-[60px] mr-[15px]">
                                     <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
                                 </div>
                                 <div>
-                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                    <h4
+                                        class="cursor-pointer font-montserrat text-default text-[15px] hover:text-primary mb-[5px] font-bold">
+                                        Nihil
                                         blanditiis at in nihil autem</h4>
-                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                    <h5 class="text-[14px] text-customMix5 italic">Jan 1, 2020</h5>
                                 </div>
                             </div>
                             <!-- post 2 -->
                             <div class="flex">
-                                <div class="w-20 h-20 mr-[15px]">
+                                <div class="w-20 h-[60px] mr-[15px]">
                                     <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
                                 </div>
                                 <div>
-                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                    <h4
+                                        class="cursor-pointer font-montserrat text-default text-[15px] hover:text-primary mb-[5px] font-bold">
+                                        Nihil
                                         blanditiis at in nihil autem</h4>
-                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                    <h5 class="text-[14px] text-customMix5 italic">Jan 1, 2020</h5>
                                 </div>
                             </div>
                             <!-- post 3 -->
                             <div class="flex">
-                                <div class="w-20 h-20 mr-[15px]">
+                                <div class="w-20 h-[60px] mr-[15px]">
                                     <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
                                 </div>
                                 <div>
-                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                    <h4
+                                        class="cursor-pointer font-montserrat text-default text-[15px] hover:text-primary mb-[5px] font-bold">
+                                        Nihil
                                         blanditiis at in nihil autem</h4>
-                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                    <h5 class="text-[14px] text-customMix5 italic">Jan 1, 2020</h5>
                                 </div>
                             </div>
                             <!-- post 4 -->
                             <div class="flex">
-                                <div class="w-20 h-20 mr-[15px]">
+                                <div class="w-20 h-[60px] mr-[15px]">
                                     <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
                                 </div>
                                 <div>
-                                    <h4 class="cursor-pointer text-[15px] hover:text-primary mb-[5px] font-bold">Nihil
+                                    <h4
+                                        class="cursor-pointer font-montserrat text-default text-[15px] hover:text-primary mb-[5px] font-bold">
+                                        Nihil
                                         blanditiis at in nihil autem</h4>
-                                    <h5 class="text-[14px] italic">Jan 1, 2020</h5>
+                                    <h5 class="text-[14px] text-customMix5 italic">Jan 1, 2020</h5>
                                 </div>
                             </div>
                             <!-- post 5 -->
                             <div class="flex">
-                                <div class="w-20 h-20 mr-[15px]">
+                                <div class="w-20 h-[60px] mr-[15px]">
                                     <img src="img/blog.jpg" class="w-full object-cover h-full " alt="">
                                 </div>
                                 <div>
@@ -283,41 +556,41 @@
                     </div>
                     <!-- tages -->
                     <div>
-                        <h4 class="mb-5 text-xl font-bold">Tages</h4>
+                        <h4 class="mb-5 text-xl font-montserrat text-heading font-bold">Tages</h4>
                         <div class="">
                             <ul class="flex flex-wrap">
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">App</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">IT</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Business</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Mac</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Design</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Office</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Creative</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Studio</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Smart</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Tips</span>
                                 <span
-                                    class="cursor-pointer hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
+                                    class="cursor-pointer text-customMix3 border-customMix6 hover:bg-primary text-sm py-[6px] px-[14px] mr-[6px] mb-2 border"
                                     href="">Marketing</span>
                             </ul>
                         </div>
@@ -327,8 +600,89 @@
         </div>
     </section>
 
+    <footer class="bg-[#f9f9f9] text-default py-[50px]">
+        <div class="container max-w-[1140px] mx-auto px-3 flex">
+            <!-- Company Section -->
+            <div class="w-5/12 px-3">
+                <h2 class="text-[30px] font-bold text-heading mb-[25px]">Append</h2>
+                <p class="text-sm font-montserrat mb-4">
+                    Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada
+                    terra videa magna derita valies darta donna mare fermentum iaculis eu non
+                    diam phasellus.
+                </p>
+                <!-- Social Links -->
+                <div class="flex space-x-4 mt-4">
+                    <a href="#"
+                        class="border rounded-full h-10 w-10 border-customMix5 flex items-center justify-center p-2 text-customMix5  hover:text-primary hover:border-primary">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="border rounded-full h-10 w-10 border-customMix5 flex items-center justify-center p-2 text-customMix5  hover:text-primary hover:border-primary">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                        class="border rounded-full h-10 w-10 border-customMix5 flex items-center justify-center p-2 text-customMix5  hover:text-primary hover:border-primary">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="border rounded-full h-10 w-10 border-customMix5 flex items-center justify-center p-2 text-customMix5  hover:text-primary hover:border-primary">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
 
+            <!-- Useful Links -->
+            <div class="w-1/6 px-3">
+                <h3 class="text-lg font-bold text-heading mb-2 pb-3">Useful Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-primary text-customMix2">Home</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">About us</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Services</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Terms of service</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div class="w-1/6 px-3">
+                <h3 class="text-lg font-bold text-heading mb-2 pb-3">Our Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-primary text-customMix2">Web Design</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Web Development</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Product Management</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Marketing</a></li>
+                    <li><a href="#" class="hover:text-primary text-customMix2">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="text-sm w-1/4 px-3 text-default">
+                <h3 class="text-lg font-bold text-heading mb-2 pb-3">Contact Us</h3>
+                <p class="text-default mb-1">A108 Adam Street</p>
+                <p class="text-default mb-1">New York, NY 535022</p>
+                <p class="text-default mb-1">United States</p>
+                <p class="mt-4 mb-1"><strong class="text-default ">Phone:</strong> +1 5589 55488 55</p>
+                <p><strong class="text-default ">Email:</strong> info@example.com</p>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        </div>
+        <div class="container mt-6 py-6 bg-customMix95 max-w-[1140px] mx-auto px-3 text-center">
+            <p class="text-sm text-default">
+                &copy; Copyright <strong>Append</strong> All Rights Reserved
+            </p>
+            <p class="text-[13px] text-default mt-[6px]">
+                Designed by <a href="#" class="text-primary">BootstrapMade</a>
+                Distributed By <a href="#" class="text-primary">ThemeWagon</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/2dfedb0ed0.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
