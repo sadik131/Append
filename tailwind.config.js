@@ -11,17 +11,23 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        box: "0 4px 16px rgba(0, 0, 0, 0.1)"
+        box: "0 4px 16px rgba(0, 0, 0, 0.1)",
+        card: "0px 10px 50px rgba(0, 0, 0, 0.1)",
+        img: "0 15px 30px -10px rgba(0, 0, 0, 0.1);",
       },
       fontFamily: {
         open: ["Open Sans", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        poppin: ["Poppins", "sans-serif"],
       },
       colors: {
+        tag: 'color-mix(in srgb, #e84545, transparent 95%)',
+        curcle: 'color-mix(in srgb, #e84545, transparent 70%)',
+        customMix05: 'color-mix(in srgb, #ffffff, transparent 05%)',
         customMix2: 'color-mix(in srgb, #212529, transparent 20%)',
         customMix3: 'color-mix(in srgb, #212529, transparent 30%)',
         customMix4: 'color-mix(in srgb, #212529, transparent 40%)',
+        whiteMix4: 'color-mix(in srgb, #ffffff, transparent 40%)',
         customMix5: 'color-mix(in srgb, #212529, transparent 50%)',
         customMix6: 'color-mix(in srgb, #212529, transparent 60%)',
         customMix7: 'color-mix(in srgb, #212529, transparent 70%)',
@@ -29,11 +35,12 @@ module.exports = {
         customMix95: 'color-mix(in srgb, #212529, transparent 95%)',
         customMix9: 'color-mix(in srgb, #212529, transparent 90%)',
         background: '#ffffff',
+        navlink: '#ffffff80',
         default: '#212529',
         heading: '#32353a',
         link: "#3a3939",
         primary: '#e84545',
-        surface: '#ffffff',
+        surface: '#f9f9f9',
         contrast: '#ffffff',
       },
     },
