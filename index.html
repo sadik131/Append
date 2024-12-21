@@ -14,20 +14,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="fixed top-0 left-0 w-full  px-3 py-5 z-50">
-        <div class="container mx-auto flex items-center justify-between">
+    <nav id="navbar" class="fixed top-0 left-0 w-full py-5 z-50">
+        <div class="flex items-center justify-between container max-w-full mx-auto px-3 ">
             <!-- Logo -->
-            <h1 class="text-2xl font-montserrat text-white font-semibold">Append <span class="text-primary">.</span>
+            <h1 id="logo" class="text-2xl font-montserrat text-white font-semibold">Append <span
+                    class="text-primary">.</span>
             </h1>
 
             <!-- Desktop Navbar -->
-            <ul class="hidden lg:flex items-center justify-center font-normal text-navlink font-Lato">
+            <ul id="link" class="hidden lg:flex items-center justify-center font-normal text-navlink font-Lato">
                 <li class="py-[18px] px-[15px]"><a href="#" class="hover:text-primary  font-poppin text-white">Home</a>
                 </li>
                 <li class="py-[18px] px-[15px]"><a href="/deatails.html"
@@ -48,14 +49,14 @@
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul
-                        class="hidden absolute left-3  w-48 py-2 mt-2 bg-white shadow-md group-hover:flex flex-col hover:flex">
+                        class="hidden absolute left-3 text-navlink w-48 py-2 mt-2 bg-white shadow-md group-hover:flex flex-col hover:flex">
                         <li><a href="#"
                                 class="hover:text-primary font-poppins text-link block px-5 py-[10px] text-sm">Dropdown
                                 1</a></li>
 
                         <!-- Deep Dropdown -->
                         <li class="relative">
-                            <a href="#" class="peer hover:text-primary block py-[10px]  px-5 text-sm">Deep Dropdown
+                            <a href="#" class="peer hover:text-primary text-navlink block py-[10px]  px-5 text-sm">Deep Dropdown
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
                             <ul
@@ -87,7 +88,7 @@
                     </ul>
                 </li>
 
-                <li><a href="#" class="hover:text-primary font-poppins text-link py-4 px-6 text-base">Contact</a></li>
+                <li><a href="#" class="hover:text-white font-poppins text-navlink py-4 px-6 text-base">Contact</a></li>
             </ul>
 
 
@@ -122,7 +123,7 @@
                                 <!-- Deep Dropdown -->
                                 <li class="relative">
                                     <a href="#"
-                                        class="block py-[10px] font-poppins px-5 text-black flex items-center justify-between cursor-pointer"
+                                        class="block py-[10px] font-poppins px-5 text-navlink flex items-center justify-between cursor-pointer"
                                         onclick="toggleDropdown(event, 'deepDropdownMenu')">
                                         Deep Dropdown
                                         <span
@@ -133,16 +134,16 @@
 
                                     <ul id="deepDropdownMenu"
                                         class="hidden border mx-5 my-[10px] bg-[#21252908] rounded mt-2 py-2 left-full top-0 ">
-                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Deep
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Deep
                                                 Dropdown 1</a></li>
-                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Deep
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Deep
                                                 Dropdown 2</a></li>
-                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Deep
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Deep
                                                 Dropdown 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 3</a></li>
-                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 4</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Dropdown 3</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Dropdown 4</a></li>
                             </ul>
                         </li>
                         <li><a class="text-base" href="">Contact</a></li>
@@ -152,7 +153,7 @@
             <div class="flex ">
                 <button class="bg-primary text-[14px] py-2 px-6 rounded-[4px] text-white">Get Started</button>
                 <!-- Hamburger Button -->
-                <button id="navbar-toggle" class="block lg:hidden w-[38px] text-default text-2xl focus:outline-none">
+                <button id="navbar-toggle" class="block lg:hidden w-[38px] text-[#ffffff80] text-2xl focus:outline-none">
                     ☰
                 </button>
             </div>
@@ -167,7 +168,8 @@
         <!-- Center this content to the screen -->
         <div class="max-w-[1140px] px-3 container mx-auto relative flex flex-col  justify-center h-full text-white">
             <h1 class="text-[32px] lg:text-[44px] font-montserrat font-bold">Welcome to Our Website</h1>
-            <p class="mt-1 text-lg lg:text-xl">We are a team of talented designers making websites with Bootstrap</p>
+            <p class="mt-1 text-lg font-open lg:text-xl">We are a team of talented designers making websites with
+                Bootstrap</p>
             <form class="mt-5 mb-[15px] lg:w-5/12 p-[10px] rounded-[7px] bg-customMix05 flex items-center gap-4">
                 <input type="text" class="px-[10px] w-full py-1 rounded bg-transparent text-black focus:outline-none">
                 <button
@@ -178,41 +180,41 @@
 
     <!-- brand logo -->
     <section class="container max-w-[1140px] mx-auto py-5 px-3">
-        <div class="flex justify-center ">
+        <div class="flex justify-center flex-wrap">
             <!-- brand 1 -->
-            <div class="px-3">
+            <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-1.png"
-                    class="h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 2 -->
-            <div class="px-3">
+            <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-2.png"
-                    class="h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 3 -->
-            <div class="px-3">
+            <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-3.png"
-                    class="h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 4 -->
-            <div class="px-3">
+            <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-4.png"
-                    class="h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 5 -->
-            <div class="px-3">
+            <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-5.png"
-                    class="h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 6 -->
-            <div class="px-3">
+            <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-6.png"
-                    class="h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
         </div>
@@ -220,63 +222,82 @@
 
     <!-- about us -->
     <section class="bg-surface py-[60px] relative">
-        <div class="container mx-auto max-w-[1140px] flex items-center justify-center">
+        <div class="container mx-auto max-w-[1140px] flex flex-col lg:flex-row items-center justify-center">
             <!-- text section -->
-            <div class="w-5/12 mt-11 px-3">
+            <div class="lg:w-5/12 mt-11 px-3">
                 <!-- tag -->
-                <span class="text-primary bg-tag font-medium px-5 rounded-[7px] py-[10px] font-montserrat">About
+                <span class="text-primary bg-tag font-medium mb-2 px-5 rounded-[7px] py-[10px] font-montserrat">About
                     Us</span>
-                <h2 class="text-heading font-bold text-[32px] mb-2 font-montserrat">Ducimus rerum libero reprehenderit
+                <h2 class="text-heading font-bold text-[25px] lg:text-[32px] mb-2 font-montserrat">Ducimus rerum libero
+                    reprehenderit
                     cumque</h2>
-                <p class="mb-4 text-default text-base">Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor
+                <p class="mb-4 text-default font-open text-base">Ipsa sint sit. Quis ducimus tempore dolores impedit et
+                    dolor
                     cumque alias
                     maxime. Enim reiciendis
                     minus
                     et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem
                     tempora deleniti soluta.</p>
-                <button class="text-white bg-primary  font-medium text-base py-3 px-6 rounded-[5px]">Read More</button>
+                <button class="text-white bg-primary  font-medium text-base py-3 px-6 rounded-[5px]">Read More <i
+                        class="fa-solid fa-arrow-right"></i></button>
             </div>
             <!-- card section -->
-            <div class="grid grid-cols-1 w-7/12 px-3 lg:grid-cols-2 ">
+            <div class="grid grid-cols-1 lg:w-7/12 px-3 mt-10 lg:mt-0 lg:grid-cols-2 ">
                 <!-- card1 -->
-                <div class="px-3">
+                <div class="lg:px-3 mb-12 lg:mb-0 py-3 group">
                     <div class="cat__section rounded-[10px] shadow-card bg-white py-[50px] group px-10 ">
-                        <i class="fa-solid text-5xl mb-5 text-primary fa-bullseye"></i>
-                        <h6 class="text-heading text-[17px] font-normal mb-2">Eius provident
+                        <div
+                            class="h-20 w-20 group-hover:bg-primary bg-tag rounded-full mb-5 flex items-center justify-center">
+                            <i class="fa-solid text-5xl text-primary group-hover:text-white fa-bullseye"></i>
+                        </div>
+                        <h6 class="text-heading text-2xl  font-bold mb-[10px]">Eius provident
                         </h6>
-                        <p class="text-base mb-4 text-deafult">Magni repellendus vel ullam hic officia accusantium ipsa
+                        <p class="text-base mb-4 text-default font-open">Magni repellendus vel ullam hic officia
+                            accusantium ipsa
                             dolor omnis dolor voluptatem
                         </p>
                     </div>
                 </div>
                 <!-- card2 -->
-                <div class="px-3">
+                <div class="lg:px-3 relative -top-7">
                     <div class=" cat__section rounded-[10px] shadow-card bg-white py-[50px] group px-10 ">
-                        <i class="fa-solid text-5xl mb-5 text-primary fa-terminal"></i>
-                        <h6 class="text-heading text-[17px] font-normal mb-2">Rerum aperiam
+                        <div
+                            class="h-20 w-20 group-hover:bg-primary bg-tag rounded-full mb-5 flex items-center justify-center">
+                            <i class="fa-solid text-5xl group-hover:text-white  text-primary fa-terminal"></i>
+                        </div>
+                        <h6 class="text-heading text-2xl  font-bold mb-[10px]">Rerum aperiam
                         </h6>
-                        <p class="text-base mb-4 text-deafult">Autem saepe animi et aut aspernatur culpa facere. Rerum
+                        <p class="text-base mb-4 text-default  font-open">Autem saepe animi et aut aspernatur culpa
+                            facere. Rerum
                             saepe rerum voluptates quia
                         </p>
                     </div>
                 </div>
                 <!-- card3 -->
-                <div class="px-3">
+                <div class="lg:px-3 py-3 mb-20 lg:mb-0">
                     <div class=" cat__section rounded-[10px] shadow-card bg-white py-[50px] group px-10 ">
-                        <i class="fa-solid text-5xl mb-5 text-primary fa-chart-simple"></i>
-                        <h6 class="text-heading text-[17px] font-normal mb-2">Veniam omnis</h6>
-                        <p class="text-base mb-4 text-deafult">Sint et dolor voluptas minus possimus nostrum. Reiciendis
-                            commodi eligendi omnis quideme lorenda
+                        <div
+                            class="h-20 w-20 group-hover:bg-primary bg-tag rounded-full mb-5 flex items-center justify-center">
+                            <i class="fa-solid text-5xl group-hover:text-white text-primary fa-chart-simple"></i>
+                        </div>
+                        <h6 class="text-heading text-2xl  font-bold mb-[10px]">Veniam omnis</h6>
+                        <p class="text-base mb-4 text-default ">Sint et dolor voluptas minus possimus nostrum.
+                            Reiciendis
+                            commodi eligendi font-openomnis quideme lorenda
                         </p>
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="px-3">
+                <div class="lg:px-3 relative top-[-60px]">
                     <div class=" cat__section rounded-[10px] shadow-card bg-white py-[50px] group px-10 ">
-                        <i class="fa-solid text-5xl mb-5 text-primary fa-chart-simple"></i>
-                        <h6 class="text-heading text-[17px] font-normal mb-2">Delares sapiente
+                        <div
+                            class="h-20 w-20 group-hover:bg-primary bg-tag rounded-full mb-5 flex items-center justify-center">
+                            <i class="fa-solid text-5xl group-hover:text-white text-primary fa-chart-simple"></i>
+                        </div>
+                        <h6 class="text-heading text-2xl  font-bold mb-[10px]">Delares sapiente
                         </h6>
-                        <p class="text-base mb-4 text-deafult">Omnis perferendis molestias culpa sed. Recusandae
+                        <p class="text-base mb-4 text-default  font-open">Omnis perferendis molestias culpa sed.
+                            Recusandae
                             quas possimus. Quod consequatur corrupti
                         </p>
                     </div>
@@ -286,24 +307,24 @@
     </section>
 
     <!-- project section -->
-    <section class="relative h-[400px] bg-cover bg-center">
+    <section class="relative bg-cover bg-center">
         <img src="img/stats-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div
-            class="relative container max-w-[1140px] mx-auto z-10 flex items-center justify-center h-full text-center text-white">
-            <div class="flex flex-col w-1/4 mt-6 px-3">
+            class="relative container py-[120px] max-w-[1140px] flex-col lg:flex-row mx-auto z-10 flex items-center justify-center h-full text-center text-white">
+            <div class="flex flex-col lg:w-1/4 mt-6 p-[30px]">
                 <span class="text-[48px] text-white font-bold">232</span>
                 <span class="font-montserrat font-bold text-whiteMix4">Clients</span>
             </div>
-            <div class="flex flex-col w-1/4 mt-6 px-3">
+            <div class="flex flex-col lg:w-1/4 mt-6 p-[30px]">
                 <span class="text-[48px] text-white font-bold">521</span>
                 <span class="font-montserrat font-bold text-whiteMix4">Projects</span>
             </div>
-            <div class="flex flex-col w-1/4 mt-6 px-3">
+            <div class="flex flex-col lg:w-1/4 mt-6 p-[30px]">
                 <span class="text-[48px] text-white font-bold">1453</span>
                 <span class="font-montserrat font-bold text-whiteMix4">Hours Of Support</span>
             </div>
-            <div class="flex flex-col w-1/4 mt-6 px-3">
+            <div class="flex flex-col lg:w-1/4 mt-6 p-[30px]">
                 <span class="text-[48px] text-white font-bold">32</span>
                 <span class="font-montserrat font-bold text-whiteMix4">Worker</span>
             </div>
@@ -315,16 +336,19 @@
         <!-- heading -->
         <div class="text-center px-3 pb-[60px]">
             <div>
-                <h4 class="text-[32px] text-heading mb-2 font-bold font-montserrat">Services</h4>
+                <h4
+                    class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                    Services
+                </h4>
             </div>
-            <p class="text-base text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
                 consectetur velit
             </p>
         </div>
         <!-- services -->
-        <div class="grid gap-4 lg:grid-cols-2 grid-cols-1">
+        <div class="grid px-3 gap-4 lg:grid-cols-2 grid-cols-1">
             <!-- 1st service -->
-            <div class="relative px-3 mx-auto mt-6 border-t-2 border-customMix9 pt-6">
+            <div class="relative  mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
                 <!-- Icon and Bar -->
                 <div class="flex items-center">
@@ -332,22 +356,24 @@
                         <!-- Icon -->
                         <div class="relative">
                             <i class="fa-solid text-5xl  text-customMix3 fa-hashtag"></i>
-                            <div class="bg-curcle h-[30px] w-[30px] bottom-[-15px] right-[-15px] z-[-1] absolute rounded-full"></div>
+                            <div class="bg-curcle h-[30px] w-[30px] -bottom-2 -right-1 z-[-1] absolute rounded-full">
+                            </div>
                         </div>
                         <!-- Bar on Top -->
                     </div>
                     <!-- Text Content -->
                     <div class="ml-[50px]">
-                        <h3 class="text-lg font-bold mb-[15px] text-heading font-montserrat">Lorem Ipsum</h3>
-                        <p class="text-sm mb-4 text-default">
+                        <h3 class="text-lg font-bold mb-[15px] text-heading group-hover:text-primary font-montserrat">
+                            Lorem Ipsum</h3>
+                        <p class="text-sm mb-4 font-open text-default">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident.
                         </p>
                     </div>
                 </div>
             </div>
-            <!-- 2dnd secvice -->
-            <div class="relative mx-auto mt-6 border-t-2 border-customMix9 pt-6">
+            <!-- 2nd secvice -->
+            <div class="relative mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
                 <!-- Icon and Bar -->
                 <div class="flex items-center">
@@ -355,14 +381,16 @@
                         <!-- Icon -->
                         <div class="relative">
                             <i class="fa-solid text-5xl  text-customMix3 fa-hashtag"></i>
-                            <div class="bg-curcle h-[30px] w-[30px] bottom-[-15px] right-[-15px] z-[-1] absolute rounded-full"></div>
+                            <div class="bg-curcle h-[30px] w-[30px] -bottom-2 -right-1 z-[-1] absolute rounded-full">
+                            </div>
                         </div>
                         <!-- Bar on Top -->
                     </div>
                     <!-- Text Content -->
                     <div class="ml-[50px]">
-                        <h3 class="text-lg font-bold mb-[15px] text-heading font-montserrat">Lorem Ipsum</h3>
-                        <p class="text-sm mb-4 text-default">
+                        <h3 class="text-lg font-bold mb-[15px] text-heading group-hover:text-primary font-montserrat">
+                            Lorem Ipsum</h3>
+                        <p class="text-sm mb-4 font-open text-default">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident.
                         </p>
@@ -370,7 +398,7 @@
                 </div>
             </div>
             <!-- 3rd service -->
-            <div class="relative px-3 mx-auto mt-6 border-t-2 border-customMix9 pt-6">
+            <div class="relative  mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
                 <!-- Icon and Bar -->
                 <div class="flex items-center">
@@ -378,14 +406,16 @@
                         <!-- Icon -->
                         <div class="relative">
                             <i class="fa-solid text-5xl  text-customMix3 fa-hashtag"></i>
-                            <div class="bg-curcle h-[30px] w-[30px] bottom-[-15px] right-[-15px] z-[-1] absolute rounded-full"></div>
+                            <div class="bg-curcle h-[30px] w-[30px] -bottom-2 -right-1 z-[-1] absolute rounded-full">
+                            </div>
                         </div>
                         <!-- Bar on Top -->
                     </div>
                     <!-- Text Content -->
                     <div class="ml-[50px]">
-                        <h3 class="text-lg font-bold mb-[15px] text-heading font-montserrat">Lorem Ipsum</h3>
-                        <p class="text-sm mb-4 text-default">
+                        <h3 class="text-lg font-bold mb-[15px] text-heading group-hover:text-primary font-montserrat">
+                            Lorem Ipsum</h3>
+                        <p class="text-sm mb-4 font-open text-default">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident.
                         </p>
@@ -393,7 +423,7 @@
                 </div>
             </div>
             <!-- 4th secvice -->
-            <div class="relative mx-auto mt-6 border-t-2 border-customMix9 pt-6">
+            <div class="relative mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
                 <!-- Icon and Bar -->
                 <div class="flex items-center">
@@ -401,14 +431,16 @@
                         <!-- Icon -->
                         <div class="relative">
                             <i class="fa-solid text-5xl  text-customMix3 fa-hashtag"></i>
-                            <div class="bg-curcle h-[30px] w-[30px] bottom-[-15px] right-[-15px] z-[-1] absolute rounded-full"></div>
+                            <div class="bg-curcle h-[30px] w-[30px] -bottom-2 -right-1 z-[-1] absolute rounded-full">
+                            </div>
                         </div>
                         <!-- Bar on Top -->
                     </div>
                     <!-- Text Content -->
                     <div class="ml-[50px]">
-                        <h3 class="text-lg font-bold mb-[15px] text-heading font-montserrat">Lorem Ipsum</h3>
-                        <p class="text-sm mb-4 text-default">
+                        <h3 class="text-lg font-bold mb-[15px] text-heading group-hover:text-primary font-montserrat">
+                            Lorem Ipsum</h3>
+                        <p class="text-sm mb-4 font-open text-default">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident.
                         </p>
@@ -416,7 +448,7 @@
                 </div>
             </div>
             <!-- 5rd service -->
-            <div class="relative px-3 mx-auto mt-6 border-t-2 border-customMix9 pt-6">
+            <div class="relative  mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
                 <!-- Icon and Bar -->
                 <div class="flex items-center">
@@ -424,14 +456,16 @@
                         <!-- Icon -->
                         <div class="relative">
                             <i class="fa-solid text-5xl  text-customMix3 fa-hashtag"></i>
-                            <div class="bg-curcle h-[30px] w-[30px] bottom-[-15px] right-[-15px] z-[-1] absolute rounded-full"></div>
+                            <div class="bg-curcle h-[30px] w-[30px] -bottom-2 -right-1 z-[-1] absolute rounded-full">
+                            </div>
                         </div>
                         <!-- Bar on Top -->
                     </div>
                     <!-- Text Content -->
                     <div class="ml-[50px]">
-                        <h3 class="text-lg font-bold mb-[15px] text-heading font-montserrat">Lorem Ipsum</h3>
-                        <p class="text-sm mb-4 text-default">
+                        <h3 class="text-lg font-bold mb-[15px] text-heading group-hover:text-primary font-montserrat">
+                            Lorem Ipsum</h3>
+                        <p class="text-sm mb-4 font-open text-default">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident.
                         </p>
@@ -439,7 +473,7 @@
                 </div>
             </div>
             <!-- 6th secvice -->
-            <div class="relative mx-auto mt-6 border-t-2 border-customMix9 pt-6">
+            <div class="relative mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
                 <!-- Icon and Bar -->
                 <div class="flex items-center">
@@ -447,14 +481,16 @@
                         <!-- Icon -->
                         <div class="relative">
                             <i class="fa-solid text-5xl  text-customMix3 fa-hashtag"></i>
-                            <div class="bg-curcle h-[30px] w-[30px] bottom-[-15px] right-[-15px] z-[-1] absolute rounded-full"></div>
+                            <div class="bg-curcle h-[30px] w-[30px] -bottom-2 -right-1 z-[-1] absolute rounded-full">
+                            </div>
                         </div>
                         <!-- Bar on Top -->
                     </div>
                     <!-- Text Content -->
                     <div class="ml-[50px]">
-                        <h3 class="text-lg font-bold mb-[15px] text-heading font-montserrat">Lorem Ipsum</h3>
-                        <p class="text-sm mb-4 text-default">
+                        <h3 class="text-lg font-bold mb-[15px] text-heading group-hover:text-primary font-montserrat">
+                            Lorem Ipsum</h3>
+                        <p class="text-sm mb-4 font-open text-default">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident.
                         </p>
@@ -470,63 +506,764 @@
         <!-- heading -->
         <div class="text-center px-3 pb-[60px]">
             <div>
-                <h4 class="text-[32px] text-heading mb-2 font-bold font-montserrat">Features
+                <h4
+                    class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                    Features
                 </h4>
             </div>
-            <p class="text-base text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
                 consectetur velit
             </p>
         </div>
         <!-- top content -->
-        <div class="flex items-center">
+        <div class="flex flex-col-reverse lg:flex-row items-center">
             <!-- left side -->
-            <div class="w-5/12 mt-6 px-3">
+            <div class="lg:w-5/12 mt-[7.5rem] lg:mt-20 px-3">
                 <h2 class="text-heading font-bold text-[26px] mb-2 font-montserrat">Corporis temporibus maiores
                     provident</h2>
-                <p class="mb-4 text-customMix2 font-open text-base">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                <p class="mb-4 text-customMix2 font-open text-base">Ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident.</p>
                 <button class="text-white bg-primary  font-medium text-base pt-2 pb-[10px] px-[30px] rounded-[5px]">Get
                     Started</button>
             </div>
             <!-- right side -->
-            <div class="relative flex flex-col items-end w-7/12">
-                <img class='shadow-img w-[75%]' src="img/slide3.jpg" alt="">
-                <img class='shadow-img w-[75%] absolute left-0 mt-24' src="img/slide2.jpg" alt="">
+            <div class="relative flex flex-col items-end lg:w-7/12 px-3">
+                <img class='shadow-img border-4 border-white w-[75%]' src="img/slide3.jpg" alt="">
+                <img class='shadow-img border-4 border-white w-[75%] absolute left-0 mt-24' src="img/slide2.jpg" alt="">
             </div>
         </div>
         <!-- bottom section -->
-        <div class="flex items-center mt-[200px]">
+        <div class="flex flex-col lg:flex-row items-center mt-10 lg:mt-[200px]">
             <!-- left side -->
-            <div class="relative w-7/12">
-                <img class='shadow-img w-[75%]' src="img/features-light-3.jpg" alt="">
+            <div class="relative lg:w-7/12">
+                <img class='shadow-img border-4 border-white min-h-[500px] lg:w-[75%]' src="img/features-light-3.jpg" alt="">
             </div>
             <!-- right side -->
-            <div class="w-5/12 mt-6 px-3">
-                <h2 class="text-heading font-bold text-[26px] mb-2 font-montserrat">Sunt consequatur ad ut est nulla</h2>
-                <p class="mb-4 text-customMix2 font-open text-base">Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <div class="lg:w-5/12 mt-6 px-3">
+                <h2 class="text-heading font-bold text-[26px] mb-2 font-montserrat">Sunt consequatur ad ut est nulla
+                </h2>
+                <p class="mb-4 text-customMix2 font-open text-base">Cupiditate placeat cupiditate placeat est ipsam
+                    culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.
+                </p>
                 <!-- 1st list -->
                 <div class="flex items-center mb-[10px] text-customMix2 font-open">
                     <i class="fa-solid fa-check text-primary mr-2"></i>
-                     <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <!-- 2nd list -->
                 <div class="flex items-center mb-[10px] text-customMix2 font-open">
                     <i class="fa-solid fa-check text-primary mr-2"></i>
-                     <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                 </div>
                 <!-- 3st list -->
                 <div class="flex items-center mb-[30px] text-customMix2 font-open">
                     <i class="fa-solid fa-check text-primary mr-2"></i>
-                     <p>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat
+                    <p>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat
                     </p>
                 </div>
                 <button class="text-white bg-primary  font-medium text-base pt-2 pb-[10px] px-[30px] rounded-[5px]">Get
                     Started</button>
             </div>
-            
+
         </div>
     </section>
+
+    <!-- img -->
+    <section class="max-w-[1140px] px-3 container mx-auto pt-[60px] pb-[120px]">
+        <!-- heading -->
+        <div class="text-center pb-[60px]">
+            <div>
+                <h4
+                    class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                    Portfolio
+                </h4>
+                <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                    consectetur velit</p>
+            </div>
+        </div>
+                <div class="flex items-center justify-center mb-5 gap-1">
+                    <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium bg-primary text-white rounded-3xl">All</span>
+                    <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium hover:text-white hover:bg-primary rounded-3xl">App</span>
+                    <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium hover:text-white hover:bg-primary rounded-3xl">Card</span>
+                    <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium hover:text-white hover:bg-primary rounded-3xl">Web</span>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g1.jpg" alt="Gallery Image 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g2.jpg" alt="Gallery Image 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g3.jpg" alt="Gallery Image 3" class="w-full h-fit object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g6.jpg" alt="Gallery Image 6" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g5.jpg" alt="Gallery Image 5" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g7.jpg" alt="Gallery Image 7" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/g4.jpg" alt="Gallery Image 4" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="px-3 w-1/3 mb-5">
+                        <img src="img/cam.jpg" alt="Gallery Image 7" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="max-w-[1140px] px-3 container mx-auto pt-[60px] pb-[120px]">
+        <!-- heading -->
+        <div class="text-center pb-[60px]">
+            <div>
+                <h4
+                    class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                    Pricing
+                </h4>
+            </div>
+            <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                sint
+                consectetur velit</p>
+        </div>
+        <!-- plan section -->
+        <div class="plan__cards flex flex-col lg:flex-row gap-5">
+            <!-- plan card 1 -->
+            <div class="lg:w-1/3 shadow-priceCard mt-6 bg-white px-3 rounded-[15px]">
+                <!-- price -->
+                <div class="text-center px-10 py-[60px]">
+                    <h3 class="mb-[15px] text-xl font-semibold text-heading font-montserrat ">Free Plan</h3>
+                    <div
+                        class="relative mb-5 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
+                        <i class="fa-solid fa-box text-[28px] relative z-10 text-white"></i>
+                    </div>
+
+                    <span><sup
+                            class="text-[28px] font-bold relative font-montserrat -top-3 -left-[3px] text-primary">$</sup><span
+                            class="text-[42px] font-bold font-montserrat text-primary">0</span><sub
+                            class="text-base font-normal text-customMix5 font-montserrat">/ month</sub></span>
+                    <ul class="mb-4 py-5 text-base text-start font-open text-customMix2">
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Quam
+                            adipiscing
+                            vitae proin</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Nec feugiat
+                            nisl
+                            pretium</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Nulla at
+                            volutpat
+                            diam uteera</li>
+                        <li class="text-customMix7 mb-4 line-through"><span><i
+                                    class="fa-solid fa-x text-customMix7"></i></span> Pharetra massa massa ultricies
+                        </li>
+                        <li class="text-customMix7 mb-4 line-through"><span><i
+                                    class="fa-solid fa-x text-customMix7"></i></span> Massa ultricies mi quis
+                            hendrerit
+                        </li>
+                    </ul>
+                    <button
+                        class="px-10 hover:text-white py-[10px] font-semibold rounded-3xl border-2 border-customMix8 hover:bg-primary text-customMix2 font-montserrat hover:border-primary text-base">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- plan card 2 -->
+            <div
+                class="lg:w-1/3 shadow-priceCard border-[3px] lg:scale-[1.15] border-primary mt-6 bg-white px-3 rounded-[15px]">
+                <!-- price -->
+                <div class="text-center px-10 py-[60px]">
+                    <h3 class="mb-[15px] text-xl font-semibold text-heading font-montserrat ">Business Plan</h3>
+                    <div
+                        class="relative mb-5 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
+                        <i class="fa-solid fa-box text-[28px] relative z-10 text-white"></i>
+                    </div>
+                    <span><sup
+                            class="text-[28px] font-bold relative font-montserrat -top-3 -left-[3px] text-primary">$</sup><span
+                            class="text-[42px] font-bold font-montserrat text-primary">39</span><sub
+                            class="text-base font-normal text-customMix5 font-montserrat">/ month</sub></span>
+                    <ul class="mb-4 py-5 text-base text-start font-open text-customMix2">
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Quam
+                            adipiscing
+                            vitae proin</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Nec feugiat
+                            nisl
+                            pretium</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Nulla at
+                            volutpat
+                            diam uteera</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Pharetra
+                            massa
+                            massa ultricies</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Massa
+                            ultricies
+                            mi quis hendrerit</li>
+                    </ul>
+                    <button
+                        class="px-10 hover:text-white py-[10px] font-semibold rounded-3xl border-2 border-customMix8 hover:bg-primary text-customMix2 font-montserrat hover:border-primary text-base">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- plan card 3 -->
+            <div class="lg:w-1/3 shadow-priceCard mt-6 bg-white px-3 rounded-[15px]">
+                <!-- price -->
+                <div class="text-center px-10 py-[60px]">
+                    <h3 class="mb-[15px] text-xl font-semibold text-heading font-montserrat ">Developer Plan</h3>
+                    <div
+                        class="relative mb-5 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
+                        <i class="fa-solid fa-box text-[28px] relative z-10 text-white"></i>
+                    </div>
+                    <span><sup
+                            class="text-[28px] font-bold relative font-montserrat -top-3 -left-[3px] text-primary">$</sup><span
+                            class="text-[42px] font-bold font-montserrat text-primary">49</span><sub
+                            class="text-base font-normal text-customMix5 font-montserrat">/ month</sub></span>
+                    <ul class="mb-4 py-5 text-base text-start font-open text-customMix2">
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Quam
+                            adipiscing
+                            vitae proin</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Nec feugiat
+                            nisl
+                            pretium</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Nulla at
+                            volutpat
+                            diam uteera</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Pharetra
+                            massa
+                            massa ultricies</li>
+                        <li class="mb-4"><span><i class="fa-solid fa-check text-[#059652]"></i></span> Massa
+                            ultricies
+                            mi quis hendrerit</li>
+                    </ul>
+                    <button
+                        class="px-10 hover:text-white py-[10px]  font-semibold rounded-3xl border-2 border-customMix8 hover:bg-primary text-customMix2 font-montserrat hover:border-primary text-base">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="container max-w-[1140px] mx-auto py-[60px] flex flex-col lg:flex-row">
+        <!-- left side -->
+        <div class="lg:w-1/3 px-3 mt-6 font-montserrat text-heading">
+            <div class="lg:px-12">
+                <h1 class="text-[34px] mb-2 font-normal ">
+                    Frequently Asked <strong>Questions</strong>
+                </h1>
+                <p class="text-[15px] text-customMix3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+            </div>
+        </div>
+        <!-- faq question -->
+        <div class="lg:w-2/3 mx-auto px-4 mt-8" id="faq-container">
+            <!-- 1st question -->
+            <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
+                <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-primary" data-faq="1">
+                    <h1>1. Non consectetur a erat nam at lectus urna duis?</h1>
+                    <i id="icon" class="fa-solid fa-angle-down  transition-transform"></i>
+                </div>
+                <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden" style="max-height: 500px; opacity: 1;">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                    rhoncus dolor purus non.</p>
+            </div>
+            <!-- 2nd question -->
+            <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
+                <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-heading" data-faq="2">
+                    <h1><span class="text-primary">2.</span> Non consectetur a erat nam at lectus urna duis?</h1>
+                    <i id="icon" class="fa-solid fa-angle-down transition-transform"></i>
+                </div>
+                <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden hidden">Feugiat pretium nibh ipsum consequat. Tempus
+                    iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                    porttitor rhoncus dolor purus non.</p>
+            </div>
+            <!-- 3rd question -->
+            <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
+                <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-heading" data-faq="3">
+                    <h1><span class="text-primary">3.</span> Non consectetur a erat nam at lectus urna duis?</h1>
+                    <i id="icon" class="fa-solid fa-angle-down transition-transform"></i>
+                </div>
+                <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden hidden">Feugiat pretium nibh ipsum consequat. Tempus
+                    iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                    porttitor rhoncus dolor purus non.</p>
+            </div>
+            <!-- 4th question -->
+            <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
+                <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-heading" data-faq="4">
+                    <h1><span class="text-primary">4.</span> Non consectetur a erat nam at lectus urna duis?</h1>
+                    <i id="icon" class="fa-solid fa-angle-down transition-transform"></i>
+                </div>
+                <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden hidden">Feugiat pretium nibh ipsum consequat. Tempus
+                    iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                    porttitor rhoncus dolor purus non.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- team -->
+    <section class="bg-surface py-[60px]">
+        <div class="max-w-[1140px] container mx-auto">
+            <!-- heading -->
+            <div class="text-center px-3 pb-[60px]">
+                <div>
+                    <h4
+                        class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                        Team
+                    </h4>
+                </div>
+                <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum
+                    quidem
+                    sint
+                    consectetur velit
+                </p>
+            </div>
+            <!-- team member -->
+            <div class="flex flex-wrap">
+                <!-- Member 1 -->
+                <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
+                    <div class="lg:w-[188px] lg:h-[188px] border-4 border-white rounded-full relative">
+                        <!-- Image -->
+                        <img src="img/comments-1.jpg" alt="" class="rounded-full object-cover w-full h-full">
+                        <!-- Overlay and Icon -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i
+                                class="fa-brands fa-x-twitter text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i class="fab fa-facebook-f text-xl px-2 text-white  hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-instagram text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-linkedin text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="mt-[30px]">
+                        <h3 class="text-lg text-heading font-bold mb-[6px]">Walter White</h3>
+                        <h6 class="text-[15px] italic text-customMix4 mb-[10px]">Chief Executive Officer</h6>
+                        <p class="text-sm font-open">Aliquam iure quaerat voluptatem praesentium possimus unde
+                            laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
+                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                        <!-- Image -->
+                        <img src="img/comments-3.jpg" alt="" class="rounded-full object-cover w-full h-full">
+                        <!-- Overlay and Icon -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i
+                                class="fa-brands fa-x-twitter text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i class="fab fa-facebook-f text-xl px-2 text-white  hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-instagram text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-linkedin text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="mt-[30px]">
+                        <h3 class="text-lg text-heading font-bold mb-[6px]">Walter White</h3>
+                        <h6 class="text-[15px] italic text-customMix4 mb-[10px]">Chief Executive Officer</h6>
+                        <p class="text-sm font-open">Aliquam iure quaerat voluptatem praesentium possimus unde
+                            laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div>
+                <!-- Member 3 -->
+                <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
+                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                        <!-- Image -->
+                        <img src="img/comments-4.jpg" alt="" class="rounded-full object-cover w-full h-full">
+                        <!-- Overlay and Icon -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i
+                                class="fa-brands fa-x-twitter text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i class="fab fa-facebook-f text-xl px-2 text-white  hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-instagram text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-linkedin text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="mt-[30px]">
+                        <h3 class="text-lg text-heading font-bold mb-[6px]">Walter White</h3>
+                        <h6 class="text-[15px] italic text-customMix4 mb-[10px]">Chief Executive Officer</h6>
+                        <p class="text-sm font-open">Aliquam iure quaerat voluptatem praesentium possimus unde
+                            laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div>
+                <!-- Member 4 -->
+                <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
+                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                        <!-- Image -->
+                        <img src="img/comments-5.jpg" alt="" class="rounded-full object-cover w-full h-full">
+                        <!-- Overlay and Icon -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i
+                                class="fa-brands fa-x-twitter text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i class="fab fa-facebook-f text-xl px-2 text-white  hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-instagram text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-linkedin text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="mt-[30px]">
+                        <h3 class="text-lg text-heading font-bold mb-[6px]">Walter White</h3>
+                        <h6 class="text-[15px] italic text-customMix4 mb-[10px]">Chief Executive Officer</h6>
+                        <p class="text-sm font-open">Aliquam iure quaerat voluptatem praesentium possimus unde
+                            laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div>
+                <!-- Member 5 -->
+                <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
+                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                        <!-- Image -->
+                        <img src="img/team-1.jpg" alt="" class="rounded-full object-cover w-full h-full">
+                        <!-- Overlay and Icon -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i
+                                class="fa-brands fa-x-twitter text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i class="fab fa-facebook-f text-xl px-2 text-white  hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-instagram text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-linkedin text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="mt-[30px]">
+                        <h3 class="text-lg text-heading font-bold mb-[6px]">Walter White</h3>
+                        <h6 class="text-[15px] italic text-customMix4 mb-[10px]">Chief Executive Officer</h6>
+                        <p class="text-sm font-open">Aliquam iure quaerat voluptatem praesentium possimus unde
+                            laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div>
+                <!-- Member 6 -->
+                <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
+                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                        <!-- Image -->
+                        <img src="img/comments-1.jpg" alt="" class="rounded-full object-cover w-full h-full">
+                        <!-- Overlay and Icon -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i
+                                class="fa-brands fa-x-twitter text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i class="fab fa-facebook-f text-xl px-2 text-white  hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-instagram text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-linkedin text-xl px-2 text-white hover:text-primary cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="mt-[30px]">
+                        <h3 class="text-lg text-heading font-bold mb-[6px]">Walter White</h3>
+                        <h6 class="text-[15px] italic text-customMix4 mb-[10px]">Chief Executive Officer</h6>
+                        <p class="text-sm font-open">Aliquam iure quaerat voluptatem praesentium possimus unde
+                            laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- action -->
+    <section class="relative bg-cover bg-fixed py-20" style="background-image: url('img/cta-bg.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-customMix5 bg-opacity-50"></div>
+
+        <!-- Content -->
+        <div
+            class="container max-w-[1140px] mx-auto relative z-10 flex flex-col items-center justify-center text-white text-center px-3">
+            <div class="lg:w-5/6 mx-auto">
+                <h1 class="text-[28px] font-montserrat mb-2 font-bold">Call To Action</h1>
+                <p class="mb-4 text-base">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia
+                    deserunt mollit anim id est laborum..</p>
+                <button
+                    class="m-[10px] px-10 py-3 bg-transparent hover:border-primary hover:bg-primary border-white border-2 font-montserrat  text-white font-semibold rounded-lg shadow-lg">
+                    Call to Action
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="bg-surface">
+        <div class="px-3 container max-w-[1140px]  mx-auto py-[60px]">
+            <div class="hero__section flex flex-col lg:flex-row  justify-between items-center">
+                <!-- left side -->
+                <div class="lg:w-5/12 mx-3">
+                    <h1 class="text-[32px] font-bold text-heading mb-2 font-montserrat">Testimonials
+                    </h1>
+                    <p class="text-base text-default font-open mb-4">Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+                <!-- right side -->
+                <div class="hero__right mx-3 lg:w-7/12 bg-white w-full mb-12 lg:mb-0">
+                    <div class="swiper-container relative overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!-- slider 1 -->
+                            <div class="swiper-slide">
+                                <div class="p-[30px]">
+                                    <!-- user -->
+                                    <div class="flex mr-[10px]">
+                                        <img class="rounded-full h-[90px] w-[90px] border-[6px] border-white"
+                                            src="img/comments-1.jpg" alt="">
+                                        <div>
+                                            <h2 class="text-lg text-heading font-bold mt-[10px] mb-[5px]">Soul
+                                                Goodman</h2>
+                                            <h6 class="text-customMix5 font-montserrat text-base">Designer</h6>
+                                            <div class="flex gap-1 my-[10px]">
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="my-[15px] text-base italic font-open text-default"><i
+                                            class="fa-solid fa-quote-left text-[26px] text-quate relative -left-[5px]"></i>Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus
+                                        eveniet, sapiente tenetur atque natus et, pariatur repellat ipsa doloribus
+                                        aut veniam. Ea, repellat ipsam!
+                                        <i
+                                            class="fa-solid fa-quote-left text-[26px] text-quate relative left-[5px]"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="p-[30px]">
+                                    <!-- user -->
+                                    <div class="flex mr-[10px]">
+                                        <img class="rounded-full h-[90px] w-[90px] border-[6px] border-white"
+                                            src="img/comments-4.jpg" alt="">
+                                        <div>
+                                            <h2 class="text-lg text-heading font-bold mt-[10px] mb-[5px]">Soul
+                                                Goodman</h2>
+                                            <h6 class="text-customMix5 font-montserrat text-base">Designer</h6>
+                                            <div class="flex gap-1 my-[10px]">
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="my-[15px] text-base italic font-open text-default"><i
+                                            class="fa-solid fa-quote-left text-[26px] text-quate relative -left-[5px]"></i>Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus
+                                        eveniet, sapiente tenetur atque natus et, pariatur repellat ipsa doloribus
+                                        aut veniam. Ea, repellat ipsam!
+                                        <i
+                                            class="fa-solid fa-quote-left text-[26px] text-quate relative left-[5px]"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="p-[30px]">
+                                    <!-- user -->
+                                    <div class="flex mr-[10px]">
+                                        <img class="rounded-full h-[90px] w-[90px] border-[6px] border-white"
+                                            src="img/comments-3.jpg" alt="">
+                                        <div>
+                                            <h2 class="text-lg text-heading font-bold mt-[10px] mb-[5px]">Soul
+                                                Goodman</h2>
+                                            <h6 class="text-customMix5 font-montserrat text-base">Designer</h6>
+                                            <div class="flex gap-1 my-[10px]">
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                                <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="my-[15px] text-base italic font-open text-default"><i
+                                            class="fa-solid fa-quote-left text-[26px] text-quate relative -left-[5px]"></i>Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus
+                                        eveniet, sapiente tenetur atque natus et, pariatur repellat ipsa doloribus
+                                        aut veniam. Ea, repellat ipsam!
+                                        <i
+                                            class="fa-solid fa-quote-left text-[26px] text-quate relative left-[5px]"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Posts -->
+    <section class="max-w-[1140px] container mx-auto py-[60px]">
+        <!-- heading -->
+        <div class="text-center px-3 pb-[60px]">
+            <div>
+                <h4
+                    class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                    Recent Posts
+                </h4>
+            </div>
+            <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                sint
+                consectetur velit</p>
+        </div>
+        <!-- posts section -->
+        <div class="flex flex-col lg:flex-row items-center">
+            <!-- Post 1 -->
+            <div class="lg:w-1/3 mb-5 lg:mb-0 px-3">
+                <div class="shadow-box bg-white rounded-[10px]">
+                    <img src="img/blog.jpg" alt="" class="w-full rounded-t-[10px] mb-4">
+                    <div class="px-[30px] pb-[30px]">
+                        <h6 class="text-base text-customMix5 mb-[10px] font-open">Politics</h6>
+                        <h3 class="text-xl text-heading font-montserrat font-bold mb-5">Dolorum optio tempore
+                            voluptas
+                            dignissimos</h3>
+                        <div class="flex">
+                            <img class="w-[50px] rounded-full mr-[15px]" src="img/comments-1.jpg" alt="">
+                            <div class="font-open">
+                                <h4 class="text-default text-base mb-[5px]">Maria Doe</h4>
+                                <h4 class="text-customMix5 text-sm">Jan 1, 2022</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="lg:w-1/3 mb-5 lg:mb-0 px-3">
+                <div class="shadow-box bg-white rounded-[10px]">
+                    <img src="img/blog-2.jpg" alt="" class="w-full rounded-t-[10px] mb-4">
+                    <div class="px-[30px] pb-[30px]">
+                        <h6 class="text-base text-customMix5 mb-[10px] font-open">Sport</h6>
+                        <h3 class="text-xl text-heading font-montserrat font-bold mb-5">Dolorum optio tempore
+                            voluptas
+                            dignissimos</h3>
+                        <div class="flex">
+                            <img class="w-[50px] rounded-full mr-[15px]" src="img/comments-2.jpg" alt="">
+                            <div class="font-open">
+                                <h4 class="text-default text-base mb-[5px]">Maria Doe</h4>
+                                <h4 class="text-customMix5 text-sm">Jan 1, 2022</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="lg:w-1/3 mb-5 lg:mb-0 px-3">
+                <div class="shadow-box bg-white rounded-[10px]">
+                    <img src="img/blog-3.jpg" alt="" class="w-full rounded-t-[10px] mb-4">
+                    <div class="px-[30px] pb-[30px]">
+                        <h6 class="text-base text-customMix5 mb-[10px] font-open">Entertainment</h6>
+                        <h3 class="text-xl text-heading font-montserrat font-bold mb-5">Dolorum optio tempore
+                            voluptas
+                            dignissimos</h3>
+                        <div class="flex">
+                            <img class="w-[50px] rounded-full mr-[15px]" src="img/comments-3.jpg" alt="">
+                            <div class="font-open">
+                                <h4 class="text-default text-base mb-[5px]">Maria Doe</h4>
+                                <h4 class="text-customMix5 text-sm">Jan 1, 2022</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contect -->
+    <section class="max-w-[1140px] container mx-auto py-[60px]">
+        <!-- heading -->
+        <div class="text-center px-3 pb-[60px]">
+            <h4
+                class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
+                Contact
+            </h4>
+            <p class="text-base font-open text-default">Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                sint
+                consectetur velit</p>
+        </div>
+        <!-- contect -->
+        <div class="flex flex-col lg:flex-row">
+            <!-- left -->
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:w-1/2 px-3 ">
+                <!-- 1st -->
+                <div class="p-[30px] bg-customMix95 font-open">
+                    <i class="fa-solid fa-location-dot text-[38px] text-primary"></i>
+                    <h3 class="font-montserrat text-heading mt-5 mb-[10px] text-xl font-bold">Address</h3>
+                    <h6 class="font-sm text-default">A108 Adam Street</h6>
+                    <h6 class="font-sm text-default">New York,Ny 535022</h6>
+                </div>
+                <!-- 2nd -->
+                <div class="p-[30px] bg-customMix95 font-open">
+                    <i class="fa-solid fa-phone text-[38px] text-primary"></i>
+                    <h3 class="font-montserrat text-heading mt-5 mb-[10px] text-xl font-bold">Call Us</h3>
+                    <h6 class="font-sm text-default">+1 5589 55488 55</h6>
+                    <h6 class="font-sm text-default">1+ 6678 24445 41</h6>
+                </div>
+                <!-- 3rd -->
+                <div class="p-[30px] bg-customMix95 font-open">
+                    <i class="fa-regular fa-envelope text-[38px] text-primary"></i>
+                    <h3 class="font-montserrat text-heading mt-5 mb-[10px] text-xl font-bold">Email Us</h3>
+                    <h6 class="font-sm text-default">info@example.com</h6>
+                    <h6 class="font-sm text-default">contact@example.com</h6>
+                </div>
+                <!-- 3rd -->
+                <div class="p-[30px] bg-customMix95 font-open">
+                    <i class="fa-regular fa-clock text-[38px] text-primary"></i>
+                    <h3 class="font-montserrat text-heading mt-5 mb-[10px] text-xl font-bold">Open Hours</h3>
+                    <h6 class="font-sm text-default">Monday - Friday</h6>
+                    <h6 class="font-sm text-default">9:00AM - 5:00PM</h6>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="bg-customMix95 p-[30px] lg:w-1/2">
+                <form action="">
+                    <div class="flex">
+                        <span class="w-1/2">
+                            <input type="text" placeholder="Your Name"
+                                class="w-full px-[15px] py-[10px] border border-customMix8 mb-4">
+                        </span>
+                        <span class="w-1/2 ml-3">
+                            <input type="text" placeholder="Your email"
+                                class="w-full px-[15px] py-[10px] border border-customMix8 mb-4">
+                        </span>
+                    </div>
+                    <input type="text" placeholder="Subject"
+                        class="w-full px-[15px] py-[10px] border border-customMix8 mb-4">
+                    <textarea type="text" placeholder="message"
+                        class="w-full h-[180px] px-[15px] py-[10px] border border-customMix8 mb-4"></textarea>
+                    <button
+                        class="px-[30px] pt-[10px] pb-[10px] rounded block mx-auto bg-primary text-white hover:bg-primary">Send
+                        Message</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
 
 
 
@@ -610,7 +1347,14 @@
         </div>
     </footer>
 
+    <!-- scrollreveal -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script src="https://kit.fontawesome.com/2dfedb0ed0.js" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

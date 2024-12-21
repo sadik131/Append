@@ -13,7 +13,9 @@ module.exports = {
       boxShadow: {
         box: "0 4px 16px rgba(0, 0, 0, 0.1)",
         card: "0px 10px 50px rgba(0, 0, 0, 0.1)",
-        img: "0 15px 30px -10px rgba(0, 0, 0, 0.1);",
+        priceCard: "0 3px 20px -2px rgba(0, 0, 0, 0.1)",
+        img: "0 15px 30px -10px rgba(0, 0, 0, 0.1)",
+        faq: "0px 5px 25px 0px rgba(0, 0, 0, 0.1)",
       },
       fontFamily: {
         open: ["Open Sans", "sans-serif"],
@@ -22,12 +24,16 @@ module.exports = {
       },
       colors: {
         tag: 'color-mix(in srgb, #e84545, transparent 95%)',
+        red9: 'color-mix(in srgb, #e84545, transparent 90%)',
         curcle: 'color-mix(in srgb, #e84545, transparent 70%)',
+        red8: 'color-mix(in srgb, #e84545, transparent 80%)',
+        quate: 'color-mix(in srgb, #e84545, transparent 60%)',
         customMix05: 'color-mix(in srgb, #ffffff, transparent 05%)',
         customMix2: 'color-mix(in srgb, #212529, transparent 20%)',
         customMix3: 'color-mix(in srgb, #212529, transparent 30%)',
         customMix4: 'color-mix(in srgb, #212529, transparent 40%)',
         whiteMix4: 'color-mix(in srgb, #ffffff, transparent 40%)',
+        whiteMix5: 'color-mix(in srgb, #ffffff, transparent 50%)',
         customMix5: 'color-mix(in srgb, #212529, transparent 50%)',
         customMix6: 'color-mix(in srgb, #212529, transparent 60%)',
         customMix7: 'color-mix(in srgb, #212529, transparent 70%)',
