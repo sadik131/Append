@@ -32,6 +32,7 @@ module.exports = {
         customMix2: 'color-mix(in srgb, #212529, transparent 20%)',
         customMix3: 'color-mix(in srgb, #212529, transparent 30%)',
         customMix4: 'color-mix(in srgb, #212529, transparent 40%)',
+        whiteMix2: 'color-mix(in srgb, #ffffff, transparent 20%)',
         whiteMix4: 'color-mix(in srgb, #ffffff, transparent 40%)',
         whiteMix5: 'color-mix(in srgb, #ffffff, transparent 50%)',
         customMix5: 'color-mix(in srgb, #212529, transparent 50%)',

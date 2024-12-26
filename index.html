@@ -93,60 +93,60 @@
 
 
             <!-- Mobile Modal Navbar -->
-            <div id="mobile-nav" class="fixed inset-0 bg-[#212529cc] hidden flex items-center lg:justify-center z-50">
+            <div id="mobile-nav" class="fixed inset-0 bg-[#212529cc] hidden flex items-center justify-center z-50">
                 <div class="bg-white w-[90%] max-w-[400px] overflow-y-auto p-5 rounded-lg">
                     <button id="close-navbar"
                         class="absolute right-6 top-5 text-primary text-xl mb-5 focus:outline-none">
                         ✕
                     </button>
                     <ul class="flex flex-col space-y-4 font-normal text-default font-Lato max-h-[70vh] ">
-                        <li><a class="text-base  font-poppins text-primary" href="">Home</a></li>
-                        <li><a class="text-base font-poppins " href="/deatails.html">About</a></li>
-                        <li><a class="text-base font-poppins " href="">Services</a></li>
-                        <li><a class="text-base font-poppins " href="">Portfolio</a></li>
-                        <li><a class="text-base font-poppins " href="">Team</a></li>
-                        <li><a class="text-base font-poppins " href="">Blog</a></li>
+                        <li><a class="text-[17px] font-medium  font-poppins text-primary" href="">Home</a></li>
+                        <li><a class="text-[17px] font-medium font-poppins " href="/deatails.html">About</a></li>
+                        <li><a class="text-[17px] font-medium font-poppins " href="">Services</a></li>
+                        <li><a class="text-[17px] font-medium font-poppins " href="">Portfolio</a></li>
+                        <li><a class="text-[17px] font-medium font-poppins " href="">Team</a></li>
+                        <li><a class="text-[17px] font-medium font-poppins " href="">Blog</a></li>
                         <li class="relative">
-                            <a href="#" class="text-base flex items-center justify-between cursor-pointer"
+                            <a href="#" class="text-[17px] font-medium flex items-center justify-between cursor-pointer"
                                 onclick="toggleDropdown(event, 'dropdownMenu')">
                                 Dropdown
                                 <span
-                                    class="bg-[#EAF8EC] hover:bg-primary hover:text-white h-[30px] text-xs w-[30px] rounded-full flex items-center justify-center transition-transform duration-300">
+                                    class="bg-[#e8454515] hover:bg-primary hover:text-white h-[30px] text-xs w-[30px] rounded-full flex items-center justify-center transition-transform duration-300">
                                     <i class="fa-solid fa-angle-down"></i>
                                 </span>
                             </a>
 
                             <!-- Dropdown Menu -->
-                            <ul id="dropdownMenu" class="hidden border bg-[#21252908] rounded my-[10px] py-[10px] ">
-                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 1</a></li>
-                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-black">Dropdown 2</a></li>
+                            <ul id="dropdownMenu" class="hidden border text-[17px] text-heading font-medium bg-[#21252908] rounded my-[10px] py-[10px] ">
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 ">Dropdown 1</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 ">Dropdown 2</a></li>
                                 <!-- Deep Dropdown -->
                                 <li class="relative">
                                     <a href="#"
-                                        class="block py-[10px] font-poppins px-5 text-navlink flex items-center justify-between cursor-pointer"
+                                        class="block py-[10px] font-poppins px-5 text-heading flex items-center justify-between cursor-pointer"
                                         onclick="toggleDropdown(event, 'deepDropdownMenu')">
                                         Deep Dropdown
                                         <span
-                                            class="bg-[#EAF8EC] hover:bg-primary hover:text-white h-[30px] text-xs w-[30px] rounded-full flex items-center justify-center">
+                                            class="bg-[#e8454515] hover:bg-primary hover:text-white h-[30px] text-xs w-[30px] rounded-full flex items-center justify-center">
                                             <i class="fa-solid fa-angle-down"></i>
                                         </span>
                                     </a>
 
                                     <ul id="deepDropdownMenu"
                                         class="hidden border mx-5 my-[10px] bg-[#21252908] rounded mt-2 py-2 left-full top-0 ">
-                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Deep
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-heading">Deep
                                                 Dropdown 1</a></li>
-                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Deep
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-heading">Deep
                                                 Dropdown 2</a></li>
-                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Deep
+                                        <li><a href="#" class="block py-[10px] font-poppins px-5 text-heading">Deep
                                                 Dropdown 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Dropdown 3</a></li>
-                                <li><a href="#" class="block py-[10px] font-poppins px-5 text-navlink">Dropdown 4</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 ">Dropdown 3</a></li>
+                                <li><a href="#" class="block py-[10px] font-poppins px-5 ">Dropdown 4</a></li>
                             </ul>
                         </li>
-                        <li><a class="text-base" href="">Contact</a></li>
+                        <li><a class="text-[17px] font-medium font-poppin" href="">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -166,9 +166,9 @@
         <img src="img/hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <!-- Center this content to the screen -->
-        <div class="max-w-[1140px] px-3 container mx-auto relative flex flex-col  justify-center h-full text-white">
+        <div class="hero__continer max-w-[1140px] px-3 container mx-auto relative flex flex-col  justify-center h-full text-white">
             <h1 class="text-[32px] lg:text-[44px] font-montserrat font-bold">Welcome to Our Website</h1>
-            <p class="mt-1 text-lg font-open lg:text-xl">We are a team of talented designers making websites with
+            <p class="mt-1 text-lg text-whiteMix2  font-open lg:text-xl">We are a team of talented designers making websites with
                 Bootstrap</p>
             <form class="mt-5 mb-[15px] lg:w-5/12 p-[10px] rounded-[7px] bg-customMix05 flex items-center gap-4">
                 <input type="text" class="px-[10px] w-full py-1 rounded bg-transparent text-black focus:outline-none">
@@ -180,41 +180,41 @@
 
     <!-- brand logo -->
     <section class="container max-w-[1140px] mx-auto py-5 px-3">
-        <div class="flex justify-center flex-wrap">
+        <div class="brance__container flex justify-center flex-wrap">
             <!-- brand 1 -->
             <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-1.png"
-                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-[70px] transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 2 -->
             <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-2.png"
-                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-[70px] transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 3 -->
             <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-3.png"
-                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-[70px] transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 4 -->
             <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-4.png"
-                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-[70px] transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 5 -->
             <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-5.png"
-                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-[70px] transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
             <!-- brand 6 -->
             <div class="px-3 w-1/2 lg:w-2/12">
                 <img src="img/logo-6.png"
-                    class="lg:h-16 transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
+                    class="lg:h-[70px] transition-all duration-100 py-5 px-10 grayscale hover:grayscale-0 cursor-pointer hover:opacity-100 opacity-50"
                     alt="">
             </div>
         </div>
@@ -224,11 +224,11 @@
     <section class="bg-surface py-[60px] relative">
         <div class="container mx-auto max-w-[1140px] flex flex-col lg:flex-row items-center justify-center">
             <!-- text section -->
-            <div class="lg:w-5/12 mt-11 px-3">
+            <div class="about__text lg:w-5/12 mt-11 px-3">
                 <!-- tag -->
-                <span class="text-primary bg-tag font-medium mb-2 px-5 rounded-[7px] py-[10px] font-montserrat">About
+                <span class="text-primary bg-tag font-medium  px-5 rounded-[7px] py-[10px] font-montserrat">About
                     Us</span>
-                <h2 class="text-heading font-bold text-[25px] lg:text-[32px] mb-2 font-montserrat">Ducimus rerum libero
+                <h2 class="text-heading font-bold text-[25px] lg:text-[32px] my-2 font-montserrat">Ducimus rerum libero
                     reprehenderit
                     cumque</h2>
                 <p class="mb-4 text-default font-open text-base">Ipsa sint sit. Quis ducimus tempore dolores impedit et
@@ -242,7 +242,7 @@
                         class="fa-solid fa-arrow-right"></i></button>
             </div>
             <!-- card section -->
-            <div class="grid grid-cols-1 lg:w-7/12 px-3 mt-10 lg:mt-0 lg:grid-cols-2 ">
+            <div class="about__cards grid grid-cols-1 lg:w-7/12 px-3 mt-10 lg:mt-0 lg:grid-cols-2 ">
                 <!-- card1 -->
                 <div class="lg:px-3 mb-12 lg:mb-0 py-3 group">
                     <div class="cat__section rounded-[10px] shadow-card bg-white py-[50px] group px-10 ">
@@ -311,7 +311,7 @@
         <img src="img/stats-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div
-            class="relative container py-[120px] max-w-[1140px] flex-col lg:flex-row mx-auto z-10 flex items-center justify-center h-full text-center text-white">
+            class="relative project__count container py-[120px] max-w-[1140px] flex-col lg:flex-row mx-auto z-10 flex items-center justify-center h-full text-center text-white">
             <div class="flex flex-col lg:w-1/4 mt-6 p-[30px]">
                 <span class="text-[48px] text-white font-bold">232</span>
                 <span class="font-montserrat font-bold text-whiteMix4">Clients</span>
@@ -330,11 +330,12 @@
             </div>
         </div>
     </section>
+    
 
     <!-- service section -->
     <section class="max-w-[1140px] container mx-auto py-[60px]">
         <!-- heading -->
-        <div class="text-center px-3 pb-[60px]">
+        <div class="heading__text text-center px-3 pb-[60px]">
             <div>
                 <h4
                     class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
@@ -346,7 +347,7 @@
             </p>
         </div>
         <!-- services -->
-        <div class="grid px-3 gap-4 lg:grid-cols-2 grid-cols-1">
+        <div class="cards__card grid px-3 gap-4 lg:grid-cols-2 grid-cols-1">
             <!-- 1st service -->
             <div class="relative  mx-auto mt-6 cursor-pointer border-t-2 border-customMix9 group pt-6">
                 <div class="absolute -top-[2px] left-0 w-8 h-[2px] bg-primary"></div>
@@ -504,7 +505,7 @@
     <!-- features -->
     <section class="max-w-[1140px] container mx-auto py-[60px]">
         <!-- heading -->
-        <div class="text-center px-3 pb-[60px]">
+        <div class="heading__text text-center px-3 pb-[60px]">
             <div>
                 <h4
                     class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
@@ -518,8 +519,8 @@
         <!-- top content -->
         <div class="flex flex-col-reverse lg:flex-row items-center">
             <!-- left side -->
-            <div class="lg:w-5/12 mt-[7.5rem] lg:mt-20 px-3">
-                <h2 class="text-heading font-bold text-[26px] mb-2 font-montserrat">Corporis temporibus maiores
+            <div class="side__text lg:w-5/12 mt-[8rem] lg:mt-20 px-3">
+                <h2 class="text-heading leading-[24px] font-bold text-[26px] mb-2 font-montserrat">Corporis temporibus maiores
                     provident</h2>
                 <p class="mb-4 text-customMix2 font-open text-base">Ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis
@@ -531,17 +532,17 @@
             <!-- right side -->
             <div class="relative flex flex-col items-end lg:w-7/12 px-3">
                 <img class='shadow-img border-4 border-white w-[75%]' src="img/slide3.jpg" alt="">
-                <img class='shadow-img border-4 border-white w-[75%] absolute left-0 mt-24' src="img/slide2.jpg" alt="">
+                <img class='shadow-img border-4 ml-4 lg:ml-0 border-white w-[75%] absolute left-0 mt-24' src="img/slide2.jpg" alt="">
             </div>
         </div>
         <!-- bottom section -->
         <div class="flex flex-col lg:flex-row items-center mt-10 lg:mt-[200px]">
             <!-- left side -->
             <div class="relative lg:w-7/12">
-                <img class='shadow-img border-4 border-white min-h-[500px] lg:w-[75%]' src="img/features-light-3.jpg" alt="">
+                <img class='shadow-img border-4 border-white lg:min-h-[500px] min-h-[300px] lg:w-[85%]' src="img/features-light-3.jpg" alt="">
             </div>
             <!-- right side -->
-            <div class="lg:w-5/12 mt-6 px-3">
+            <div class="side__text lg:w-5/12 mt-6 px-3">
                 <h2 class="text-heading font-bold text-[26px] mb-2 font-montserrat">Sunt consequatur ad ut est nulla
                 </h2>
                 <p class="mb-4 text-customMix2 font-open text-base">Cupiditate placeat cupiditate placeat est ipsam
@@ -573,7 +574,7 @@
     <!-- img -->
     <section class="max-w-[1140px] px-3 container mx-auto pt-[60px] pb-[120px]">
         <!-- heading -->
-        <div class="text-center pb-[60px]">
+        <div class="heading__text text-center pb-[60px]">
             <div>
                 <h4
                     class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
@@ -583,38 +584,35 @@
                     consectetur velit</p>
             </div>
         </div>
-                <div class="flex items-center justify-center mb-5 gap-1">
+                <div class="heading__text flex items-center justify-center mb-5 gap-1">
                     <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium bg-primary text-white rounded-3xl">All</span>
                     <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium hover:text-white hover:bg-primary rounded-3xl">App</span>
                     <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium hover:text-white hover:bg-primary rounded-3xl">Card</span>
                     <span class="px-5 pt-2 pb-[10px] font-montserrat text-[15px] mb-[5px] font-medium hover:text-white hover:bg-primary rounded-3xl">Web</span>
                 </div>
-                <div class="flex flex-wrap">
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/g1.jpg" alt="Gallery Image 1" class="w-full h-full object-cover">
+                <!--  -->
+                <div class="heading__text lg:flex flex-wrap">
+                    <!-- First Column -->
+                    <div class="lg:px-3 lg:w-1/3 mb-6 space-y-6">
+                        <img src="img/g1.jpg" alt="Gallery Image 1" class="w-full h-auto object-cover">
+                        <img src="img/g6.jpg" alt="Gallery Image 6" class="w-full h-auto object-cover">
                     </div>
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/g2.jpg" alt="Gallery Image 2" class="w-full h-full object-cover">
+                    <!-- Second Column -->
+                    <div class="lg:px-3 lg:w-1/3 mb-6 space-y-6">
+                        <img src="img/g2.jpg" alt="Gallery Image 2" class="w-full h-auto object-cover">
+                        <img src="img/g5.jpg" alt="Gallery Image 5" class="w-full h-auto object-cover">
+                        <img src="img/g7.jpg" alt="Gallery Image 7" class="w-full h-auto object-cover">
                     </div>
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/g3.jpg" alt="Gallery Image 3" class="w-full h-fit object-cover">
-                    </div>
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/g6.jpg" alt="Gallery Image 6" class="w-full h-full object-cover">
-                    </div>
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/g5.jpg" alt="Gallery Image 5" class="w-full h-full object-cover">
-                    </div>
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/g7.jpg" alt="Gallery Image 7" class="w-full h-full object-cover">
-                    </div>
-                    <div class="px-3 w-1/3 mb-5">
+                    <!-- Third Column -->
+                    <div class="lg:px-3 lg:w-1/3 mb-6 space-y-6">
+                        <img src="img/g3.jpg" alt="Gallery Image 3" class="w-full h-auto object-cover">
                         <img src="img/g4.jpg" alt="Gallery Image 4" class="w-full h-auto object-cover">
-                    </div>
-                    <div class="px-3 w-1/3 mb-5">
-                        <img src="img/cam.jpg" alt="Gallery Image 7" class="w-full h-full object-cover">
+                        <img src="img/cam.jpg" alt="Gallery Image 8" class="w-full h-auto object-cover">
+                        <img src="img/g8.jpg" alt="Gallery Image 9" class="w-full h-auto object-cover">
                     </div>
                 </div>
+                
+                
                 
         </div>
     </section>
@@ -622,7 +620,7 @@
     <!-- Pricing -->
     <section class="max-w-[1140px] px-3 container mx-auto pt-[60px] pb-[120px]">
         <!-- heading -->
-        <div class="text-center pb-[60px]">
+        <div class="heading__text text-center pb-[60px]">
             <div>
                 <h4
                     class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
@@ -639,9 +637,9 @@
             <div class="lg:w-1/3 shadow-priceCard mt-6 bg-white px-3 rounded-[15px]">
                 <!-- price -->
                 <div class="text-center px-10 py-[60px]">
-                    <h3 class="mb-[15px] text-xl font-semibold text-heading font-montserrat ">Free Plan</h3>
+                    <h3 class="mb-6 text-xl font-semibold text-heading font-montserrat ">Free Plan</h3>
                     <div
-                        class="relative mb-5 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
+                        class="relative mb-6 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
                         <i class="fa-solid fa-box text-[28px] relative z-10 text-white"></i>
                     </div>
 
@@ -677,9 +675,9 @@
                 class="lg:w-1/3 shadow-priceCard border-[3px] lg:scale-[1.15] border-primary mt-6 bg-white px-3 rounded-[15px]">
                 <!-- price -->
                 <div class="text-center px-10 py-[60px]">
-                    <h3 class="mb-[15px] text-xl font-semibold text-heading font-montserrat ">Business Plan</h3>
+                    <h3 class="mb-6 text-xl font-semibold text-heading font-montserrat ">Business Plan</h3>
                     <div
-                        class="relative mb-5 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
+                        class="relative mb-6 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
                         <i class="fa-solid fa-box text-[28px] relative z-10 text-white"></i>
                     </div>
                     <span><sup
@@ -712,9 +710,9 @@
             <div class="lg:w-1/3 shadow-priceCard mt-6 bg-white px-3 rounded-[15px]">
                 <!-- price -->
                 <div class="text-center px-10 py-[60px]">
-                    <h3 class="mb-[15px] text-xl font-semibold text-heading font-montserrat ">Developer Plan</h3>
+                    <h3 class="mb-6 text-xl font-semibold text-heading font-montserrat ">Developer Plan</h3>
                     <div
-                        class="relative mb-5 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
+                        class="relative mb-6 flex items-center mx-auto justify-center bg-primary h-[70px] w-[70px] rounded-full before:content-[''] before:absolute before:w-[86px] before:h-[86px] before:bg-red8 before:rounded-full after:content-[''] after:absolute after:w-[102px] after:h-[102px] after:bg-red9 after:rounded-full">
                         <i class="fa-solid fa-box text-[28px] relative z-10 text-white"></i>
                     </div>
                     <span><sup
@@ -749,7 +747,7 @@
     <!-- faq -->
     <section class="container max-w-[1140px] mx-auto py-[60px] flex flex-col lg:flex-row">
         <!-- left side -->
-        <div class="lg:w-1/3 px-3 mt-6 font-montserrat text-heading">
+        <div class="heading__text lg:w-1/3 px-3 mt-6 font-montserrat text-heading">
             <div class="lg:px-12">
                 <h1 class="text-[34px] mb-2 font-normal ">
                     Frequently Asked <strong>Questions</strong>
@@ -761,12 +759,12 @@
             </div>
         </div>
         <!-- faq question -->
-        <div class="lg:w-2/3 mx-auto px-4 mt-8" id="faq-container">
+        <div class="heading__text lg:w-2/3 mx-auto px-4 mt-8" id="faq-container">
             <!-- 1st question -->
             <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
                 <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-primary" data-faq="1">
-                    <h1>1. Non consectetur a erat nam at lectus urna duis?</h1>
-                    <i id="icon" class="fa-solid fa-angle-down  transition-transform"></i>
+                    <h1><span class="text-primary">1.</span> Non consectetur a erat nam at lectus urna duis?</h1>
+                    <i id="icon" class="fa-solid fa-angle-down -rotate-90 transition-transform"></i>
                 </div>
                 <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden" style="max-height: 500px; opacity: 1;">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
                     volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
@@ -776,7 +774,7 @@
             <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
                 <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-heading" data-faq="2">
                     <h1><span class="text-primary">2.</span> Non consectetur a erat nam at lectus urna duis?</h1>
-                    <i id="icon" class="fa-solid fa-angle-down transition-transform"></i>
+                    <i id="icon" class="fa-solid -rotate-90 fa-angle-down transition-transform"></i>
                 </div>
                 <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden hidden">Feugiat pretium nibh ipsum consequat. Tempus
                     iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
@@ -786,7 +784,7 @@
             <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
                 <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-heading" data-faq="3">
                     <h1><span class="text-primary">3.</span> Non consectetur a erat nam at lectus urna duis?</h1>
-                    <i id="icon" class="fa-solid fa-angle-down transition-transform"></i>
+                    <i id="icon" class="fa-solid -rotate-90 fa-angle-down transition-transform"></i>
                 </div>
                 <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden hidden">Feugiat pretium nibh ipsum consequat. Tempus
                     iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
@@ -796,7 +794,7 @@
             <div class="shadow-md mb-4 p-4 rounded-lg bg-white">
                 <div class="flex justify-between items-center text-lg font-semibold cursor-pointer text-heading" data-faq="4">
                     <h1><span class="text-primary">4.</span> Non consectetur a erat nam at lectus urna duis?</h1>
-                    <i id="icon" class="fa-solid fa-angle-down transition-transform"></i>
+                    <i id="icon" class="fa-solid -rotate-90 fa-angle-down transition-transform"></i>
                 </div>
                 <p class="mt-2 text-gray-600 font-normal transition-all overflow-hidden hidden">Feugiat pretium nibh ipsum consequat. Tempus
                     iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
@@ -809,7 +807,7 @@
     <section class="bg-surface py-[60px]">
         <div class="max-w-[1140px] container mx-auto">
             <!-- heading -->
-            <div class="text-center px-3 pb-[60px]">
+            <div class="heading__text text-center px-3 pb-[60px]">
                 <div>
                     <h4
                         class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
@@ -823,10 +821,10 @@
                 </p>
             </div>
             <!-- team member -->
-            <div class="flex flex-wrap">
+            <div class="cards__card flex flex-wrap">
                 <!-- Member 1 -->
                 <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
-                    <div class="lg:w-[188px] lg:h-[188px] border-4 border-white rounded-full relative">
+                    <div class="lg:w-[188px] lg:h-[188px] w-[300px] h-[300px] border-4 border-white rounded-full relative">
                         <!-- Image -->
                         <img src="img/comments-1.jpg" alt="" class="rounded-full object-cover w-full h-full">
                         <!-- Overlay and Icon -->
@@ -851,7 +849,7 @@
                 </div>
                 <!-- Member 2 -->
                 <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
-                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                    <div class="lg:w-[188px] lg:h-[188px] w-[300px] h-[300px] border-4 border-white rounded-full relative">
                         <!-- Image -->
                         <img src="img/comments-3.jpg" alt="" class="rounded-full object-cover w-full h-full">
                         <!-- Overlay and Icon -->
@@ -876,7 +874,7 @@
                 </div>
                 <!-- Member 3 -->
                 <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
-                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                    <div class="lg:w-[188px] lg:h-[188px] w-[300px] h-[300px] border-4 border-white rounded-full relative">
                         <!-- Image -->
                         <img src="img/comments-4.jpg" alt="" class="rounded-full object-cover w-full h-full">
                         <!-- Overlay and Icon -->
@@ -901,7 +899,7 @@
                 </div>
                 <!-- Member 4 -->
                 <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
-                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                    <div class="lg:w-[188px] lg:h-[188px] w-[300px] h-[300px] border-4 border-white rounded-full relative">
                         <!-- Image -->
                         <img src="img/comments-5.jpg" alt="" class="rounded-full object-cover w-full h-full">
                         <!-- Overlay and Icon -->
@@ -926,7 +924,7 @@
                 </div>
                 <!-- Member 5 -->
                 <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
-                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                    <div class="lg:w-[188px] lg:h-[188px] w-[300px] h-[300px] border-4 border-white rounded-full relative">
                         <!-- Image -->
                         <img src="img/team-1.jpg" alt="" class="rounded-full object-cover w-full h-full">
                         <!-- Overlay and Icon -->
@@ -951,7 +949,7 @@
                 </div>
                 <!-- Member 6 -->
                 <div class="px-3 mt-12 flex items-center justify-center flex-col lg:w-1/3 text-center group relative">
-                    <div class="w-[188px] h-[188px] border-4 border-white rounded-full relative">
+                    <div class="lg:w-[188px] lg:h-[188px] w-[300px] h-[300px] border-4 border-white rounded-full relative">
                         <!-- Image -->
                         <img src="img/comments-1.jpg" alt="" class="rounded-full object-cover w-full h-full">
                         <!-- Overlay and Icon -->
@@ -1005,7 +1003,7 @@
         <div class="px-3 container max-w-[1140px]  mx-auto py-[60px]">
             <div class="hero__section flex flex-col lg:flex-row  justify-between items-center">
                 <!-- left side -->
-                <div class="lg:w-5/12 mx-3">
+                <div class="heading__text lg:w-5/12 mx-3">
                     <h1 class="text-[32px] font-bold text-heading mb-2 font-montserrat">Testimonials
                     </h1>
                     <p class="text-base text-default font-open mb-4">Ullamco laboris nisi ut aliquip ex ea commodo
@@ -1013,7 +1011,7 @@
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
                 <!-- right side -->
-                <div class="hero__right mx-3 lg:w-7/12 bg-white w-full mb-12 lg:mb-0">
+                <div class="heading__text mx-3 lg:w-7/12 bg-white w-full mb-12 lg:mb-0">
                     <div class="swiper-container relative overflow-hidden">
                         <div class="swiper-wrapper">
                             <!-- slider 1 -->
@@ -1120,7 +1118,7 @@
     <!-- Posts -->
     <section class="max-w-[1140px] container mx-auto py-[60px]">
         <!-- heading -->
-        <div class="text-center px-3 pb-[60px]">
+        <div class="heading__text text-center px-3 pb-[60px]">
             <div>
                 <h4
                     class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
@@ -1132,7 +1130,7 @@
                 consectetur velit</p>
         </div>
         <!-- posts section -->
-        <div class="flex flex-col lg:flex-row items-center">
+        <div class="cards__card flex flex-col lg:flex-row items-center">
             <!-- Post 1 -->
             <div class="lg:w-1/3 mb-5 lg:mb-0 px-3">
                 <div class="shadow-box bg-white rounded-[10px]">
@@ -1162,7 +1160,7 @@
                             voluptas
                             dignissimos</h3>
                         <div class="flex">
-                            <img class="w-[50px] rounded-full mr-[15px]" src="img/comments-2.jpg" alt="">
+                            <img class="w-[50px] rounded-full mr-[15px]" src="img/comments-5.jpg" alt="">
                             <div class="font-open">
                                 <h4 class="text-default text-base mb-[5px]">Maria Doe</h4>
                                 <h4 class="text-customMix5 text-sm">Jan 1, 2022</h4>
@@ -1196,7 +1194,7 @@
     <!-- contect -->
     <section class="max-w-[1140px] container mx-auto py-[60px]">
         <!-- heading -->
-        <div class="text-center px-3 pb-[60px]">
+        <div class="heading__text text-center px-3 pb-[60px]">
             <h4
                 class="text-[32px]  text-heading mb-2 font-bold font-montserrat before:content-[''] before:mb-[10px] after:mb-[10px] before:mr-3 after:ml-3 before:inline-block before:w-[50px] before:h-[2px] before:bg-primary  after:content-[''] after:inline-block after:w-[50px] after:h-[2px] after:bg-primary">
                 Contact
@@ -1208,7 +1206,7 @@
         <!-- contect -->
         <div class="flex flex-col lg:flex-row">
             <!-- left -->
-            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:w-1/2 px-3 ">
+            <div class="cards__card grid grid-cols-1 gap-4 lg:grid-cols-2 lg:w-1/2 px-3 ">
                 <!-- 1st -->
                 <div class="p-[30px] bg-customMix95 font-open">
                     <i class="fa-solid fa-location-dot text-[38px] text-primary"></i>
@@ -1239,7 +1237,7 @@
                 </div>
             </div>
             <!-- right -->
-            <div class="bg-customMix95 p-[30px] lg:w-1/2">
+            <div class="heading__text bg-customMix95 p-[30px] lg:w-1/2">
                 <form action="">
                     <div class="flex">
                         <span class="w-1/2">
